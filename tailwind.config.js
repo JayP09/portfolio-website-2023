@@ -15,7 +15,8 @@ module.exports = {
       fontSize: {
         "big":["3.5rem","1"],
         "h1":["1.5rem","2rem"],
-        "h3":["1.25rem","1.75rem"]
+        "h2":["1.25rem","1.75rem"],
+        "h3":["1rem","1.5rem"]
       },
       keyframes: {
         scroll: {
