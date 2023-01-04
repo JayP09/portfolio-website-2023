@@ -1,4 +1,6 @@
 import Head from 'next/head'
+import Header from '../components/header/Header'
+import HeroSection from '../components/home/HeroSection'
 
 export default function Home() {
   return (
@@ -9,13 +11,15 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
       </Head>
       <main className="bg-[#fafafa] text-[#757575]">
         {/* Header */}
+        <Header />
 
         {/* Hero */}
+        <HeroSection />
 
         {/* About */}
 
@@ -28,9 +32,6 @@ export default function Home() {
         {/* Contact Me */}
 
         {/* Footer */}
-        <div className="bg-black text-white">
-          Hello world!
-        </div>
       </main>
     </div>
   )
