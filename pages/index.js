@@ -3,6 +3,7 @@ import About from '../components/about/About'
 import Header from '../components/header/Header'
 import HeroSection from '../components/home/HeroSection'
 import Skills from '../components/skills/Skills'
+import Qualification from '../components/qualification/Qualification'
 
 export default function Home() {
   return (
@@ -31,6 +32,7 @@ export default function Home() {
         <Skills />
 
         {/* Eduaction and experience */}
+        <Qualification />
 
         {/* Projects */}
 
