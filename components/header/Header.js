@@ -27,11 +27,11 @@ const Header = () => {
 								<UilFile className="navIcon"/> Skills
 								</a>
 						</li>
-						<li>
+						{/* <li>
 								<a href="#services" className="navLink">
 								<UilBriefcaseAlt className="navIcon"/> Services
 								</a>
-						</li>
+						</li> */}
 						<li>
 								<a href="#portfolio" className="navLink">
 								<UilScenery className="navIcon"/> Portfolio
