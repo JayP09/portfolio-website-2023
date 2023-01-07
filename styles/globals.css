@@ -153,6 +153,10 @@
     @apply block w-[1px] h-full bg-[#757575] translate-x-[6px] -translate-y-[7px]
   }
 
+  .projectItem {
+    @apply text-[#333333] py-1 px-3 font-medium rounded-lg capitalize cursor-pointer hover:bg-[#333333] hover:text-[#fff]
+  }
+
   /*=============== LAYOUT ===============*/
   .sectionContainer{
     @apply mx-4 md:mx-6 lg:max-w-5xl lg:mx-auto w-auto

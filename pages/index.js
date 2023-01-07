@@ -4,6 +4,7 @@ import Header from '../components/header/Header'
 import HeroSection from '../components/home/HeroSection'
 import Skills from '../components/skills/Skills'
 import Qualification from '../components/qualification/Qualification'
+import Project from '../components/projects/Project'
 
 export default function Home() {
   return (
@@ -35,6 +36,7 @@ export default function Home() {
         <Qualification />
 
         {/* Projects */}
+        <Project />
 
         {/* Contact Me */}
 
