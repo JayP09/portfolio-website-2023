@@ -5,6 +5,9 @@ import HeroSection from '../components/home/HeroSection'
 import Skills from '../components/skills/Skills'
 import Qualification from '../components/qualification/Qualification'
 import Project from '../components/projects/Project'
+import Contact from '../components/contact/Contact'
+import Footer from '../components/footer/Footer'
+import Scrollup from '../components/scrollup/Scrollup'
 
 export default function Home() {
   return (
@@ -14,12 +17,9 @@ export default function Home() {
         <meta name="description" content="Portfolio Website" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'></link>
+        
       </Head>
-      <main className="bg-[#fafafa] text-[#757575]">
+      <main className="bg-[#fafafa] text-[#757575] scroll-smooth">
         {/* Header */}
         <Header />
 
@@ -39,8 +39,11 @@ export default function Home() {
         <Project />
 
         {/* Contact Me */}
+        <Contact />
 
         {/* Footer */}
+        <Footer />
+        <Scrollup />
       </main>
     </div>
   )

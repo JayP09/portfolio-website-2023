@@ -7,7 +7,7 @@ const Backend = () => {
       <div className='skillsBox'>
         <div className='skillsGroup'>
           <div className='skillsData'>
-            <i class='bx bx-badge-check skillsIcon'></i>
+            <i className='bx bx-badge-check skillsIcon'></i>
             <div>
               <h3 className="skillsName">Python</h3>
               <span className='skillsLevel'>Intermediate</span>
@@ -16,7 +16,7 @@ const Backend = () => {
           
 
           <div className='skillsData'>
-            <i class='bx bx-badge-check skillsIcon'></i>
+            <i className='bx bx-badge-check skillsIcon'></i>
             <div>
               <h3 className="skillsName">Firebase</h3>
               <span className='skillsLevel'>Basic</span>
@@ -27,7 +27,7 @@ const Backend = () => {
         </div>
         <div className='skillsGroup'>
           <div className='skillsData'>
-            <i class='bx bx-badge-check skillsIcon'></i>
+            <i className='bx bx-badge-check skillsIcon'></i>
             <div>
               <h3 className="skillsName">MongoDB</h3>
               <span className='skillsLevel'>Basic</span>
@@ -36,7 +36,7 @@ const Backend = () => {
           
 
           <div className='skillsData'>
-            <i class='bx bx-badge-check skillsIcon'></i>
+            <i className='bx bx-badge-check skillsIcon'></i>
             <div>
               <h3 className="skillsName">Node Js</h3>
               <span className='skillsLevel'>Basic</span>

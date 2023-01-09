@@ -17,14 +17,14 @@ const Qualification = () => {
             className={toggleState === 1 ? "qualificationButton qualificationActive buttonFlex":"qualificationButton buttonFlex"}
             onClick={() => toggleTab(1)}
           >
-            <i class='bx bxs-graduation qualificationIcon'></i> Education
+            <i className='bx bxs-graduation qualificationIcon'></i> Education
           </div>
 
           <div 
             className={toggleState === 2 ? "qualificationButton qualificationActive buttonFlex":"qualificationButton buttonFlex"}
             onClick={() => toggleTab(2)}
           >
-            <i class='bx bx-briefcase-alt qualificationIcon'></i> Experience
+            <i className='bx bx-briefcase-alt qualificationIcon'></i> Experience
           </div>
         </div>
         <div className="qualification__sections grid grid-cols-[initial] sm:grid-cols-[0.6fr] justify-center">
@@ -37,7 +37,7 @@ const Qualification = () => {
                 <span className='qualificationSubtitle mb-0'>University of mumbai</span>
                 <span className='qualificationSubtitle'>CGPA - 8.81</span>
                 <div className='qualificationcalendar'>
-                  <i class='bx bxs-calendar-alt' ></i> 2018-2022
+                  <i className='bx bxs-calendar-alt' ></i> 2018-2022
                 </div>
               </div>
               <div>
@@ -59,7 +59,7 @@ const Qualification = () => {
                 <span className='qualificationSubtitle mb-0'>Maharashtra - India</span>
                 <span className='qualificationSubtitle'>Percentage - 64.15%</span>
                 <div className='qualificationcalendar'>
-                  <i class='bx bxs-calendar-alt' ></i> 2017 - 2018
+                  <i className='bx bxs-calendar-alt' ></i> 2017 - 2018
                 </div>
               </div>
               
@@ -71,7 +71,7 @@ const Qualification = () => {
                 <span className='qualificationSubtitle mb-0'>Maharashtra - India</span>
                 <span className='qualificationSubtitle'>Percentage - 86.80%</span>
                 <div className='qualificationcalendar'>
-                  <i class='bx bxs-calendar-alt' ></i> 2015 - 2016
+                  <i className='bx bxs-calendar-alt' ></i> 2015 - 2016
                 </div>
               </div>
               <div>
@@ -89,7 +89,7 @@ const Qualification = () => {
                 <h3 className="qualificationTitle">Full-Stack Developer</h3>
                 <span className='qualificationSubtitle'>Dustecosystem</span>
                 <div className='qualificationcalendar'>
-                  <i class='bx bxs-calendar-alt' ></i> 08/2022 - 10/2022
+                  <i className='bx bxs-calendar-alt' ></i> 08/2022 - 10/2022
                 </div>
               </div>
               <div>
@@ -110,7 +110,7 @@ const Qualification = () => {
                 <h3 className="qualificationTitle">Full-stack developer</h3>
                 <span className='qualificationSubtitle'>Startup</span>
                 <div className='qualificationcalendar'>
-                  <i class='bx bxs-calendar-alt' ></i> 03/2021 - 05/2021
+                  <i className='bx bxs-calendar-alt' ></i> 03/2021 - 05/2021
                 </div>
               </div>
               

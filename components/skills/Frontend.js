@@ -7,7 +7,7 @@ const Frontend = () => {
       <div className='skillsBox'>
         <div className='skillsGroup'>
           <div className='skillsData'>
-            <i class='bx bx-badge-check skillsIcon'></i>
+            <i className='bx bx-badge-check skillsIcon'></i>
             <div>
               <h3 className="skillsName">HTML</h3>
               <span className='skillsLevel'>Intermediate</span>
@@ -16,7 +16,7 @@ const Frontend = () => {
           
 
           <div className='skillsData'>
-            <i class='bx bx-badge-check skillsIcon'></i>
+            <i className='bx bx-badge-check skillsIcon'></i>
             <div>
               <h3 className="skillsName">CSS</h3>
               <span className='skillsLevel'>Intermediate</span>
@@ -25,7 +25,7 @@ const Frontend = () => {
           
 
           <div className='skillsData'>
-            <i class='bx bx-badge-check skillsIcon'></i>
+            <i className='bx bx-badge-check skillsIcon'></i>
             <div>
               <h3 className="skillsName">Javascript</h3>
               <span className='skillsLevel'>Intermediate</span>
@@ -35,7 +35,7 @@ const Frontend = () => {
         </div>
         <div className='skillsGroup'>
           <div className='skillsData'>
-            <i class='bx bx-badge-check skillsIcon'></i>
+            <i className='bx bx-badge-check skillsIcon'></i>
             <div>
               <h3 className="skillsName">TailwindCSS</h3>
               <span className='skillsLevel'>Intermediate</span>
@@ -44,7 +44,7 @@ const Frontend = () => {
           
 
           <div className='skillsData'>
-            <i class='bx bx-badge-check skillsIcon'></i>
+            <i className='bx bx-badge-check skillsIcon'></i>
             <div>
               <h3 className="skillsName">Git</h3>
               <span className='skillsLevel'>Intermediate</span>
@@ -53,7 +53,7 @@ const Frontend = () => {
           
 
           <div className='skillsData'>
-            <i class='bx bx-badge-check skillsIcon'></i>
+            <i className='bx bx-badge-check skillsIcon'></i>
             <div>
               <h3 className="skillsName">React / Next</h3>
               <span className='skillsLevel'>Intermediate</span>

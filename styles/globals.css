@@ -32,7 +32,7 @@
 @layer components{
   /*=============== REUSABLE CSS CLASSES ===============*/
   .section{
-    @apply md:pt-24 px-0 md:pb-8 pt-8 pb-16
+    @apply  px-0 pt-8 pb-16 md:pb-8 md:pt-24 lg:px-5
   }
 
   .sectionTitle{
@@ -49,8 +49,7 @@
   }
 
   .navLink{
-    @apply flex flex-col items-center text-sm text-[#333333] font-medium transition hover:text-[#000000];
-    transition: 0.3s;
+    @apply flex flex-col items-center text-sm text-[#333333] font-medium hover:text-[#000000] transition-[0.3s];
   }
 
   .navIcon{
@@ -58,7 +57,7 @@
   }
 
   .socialIcon{
-    @apply text-xl text-[#333333] hover:text-[#000000]
+    @apply text-xl hover:text-[#000000]
   }
 
   .aboutBox {
@@ -157,6 +156,18 @@
     @apply text-[#333333] py-1 px-3 font-medium rounded-lg capitalize cursor-pointer hover:bg-[#333333] hover:text-[#fff]
   }
 
+  .contactFormInput {
+    @apply outline-none border-none rounded-lg w-full text-base p-4 bg-[#fafafa]
+  }
+
+  .footerLink {
+    @apply 	text-[#333333] hover:text-[#000000]
+  }
+
+  .footerSocialIcon {
+    @apply bg-[#333333] text-[#fff] text-lg p-2 rounded-full inline-flex justify-center items-center hover:bg-[#000000]
+  }
+
   /*=============== LAYOUT ===============*/
   .sectionContainer{
     @apply mx-4 md:mx-6 lg:max-w-5xl lg:mx-auto w-auto
@@ -168,7 +179,7 @@
 
   /*=============== BUTTONS ===============*/
   .button{
-    @apply bg-[#333333] rounded-2xl inline-block font-medium py-5 px-8 text-white hover:bg-[#000000] md:py-4 md:px-7 font-poppins
+    @apply bg-[#333333] rounded-2xl inline-block font-medium py-5 px-8 text-white hover:bg-[#000000] md:py-4 md:px-7 font-poppins cursor-pointer
   }
 
   .buttonIcon{
@@ -176,7 +187,7 @@
   }
 
   .buttonFlex{
-    @apply inline-flex items-center
+    @apply inline-flex items-center justify-center
   }
 
   @media screen and (max-width: 768px) {

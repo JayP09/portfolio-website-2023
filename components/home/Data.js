@@ -59,7 +59,7 @@ const Data = () => {
         </span>
       </h1>
       <h3 className="relative pl-14 lg:pl-20 font-normal mb-4 text-h3 before:content-[''] before:absolute before:w-10 lg:before:w-[70px] before:h-[1px] before:bg-[#757575] before:left-0 before:top-3 lg:before:top-4">
-        Frontend Developer
+        Software Engineer
       </h3>
       <p className="mb-10 max-w-sm lg:mb-12">
         I'm frontend Developer based in india, and I'm very passionate and dediacted to my work.
