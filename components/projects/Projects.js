@@ -32,7 +32,7 @@ const Projects = () => {
               onClick={(e) => {
                 handleChange(e, index);
               }}
-              className={`${active === index ? 'bg-[#333333] text-[#fff]' : ""} projectItem`} 
+              className={`${active === index ? 'bg-titleColor text-containerColor' : ""} projectItem`} 
               key={index}
             >
               {item.name}

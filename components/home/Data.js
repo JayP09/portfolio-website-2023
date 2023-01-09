@@ -2,8 +2,18 @@ import Image from 'next/image'
 import React from 'react'
 import HandIcon from "../../public/hand.svg"
 import SendIcon from "../../public/send.svg"
+import { Cursor, useTypewriter } from 'react-simple-typewriter'
 
 const Data = () => {
+  const [text, count] = useTypewriter({
+    words: [
+      "Guy-who-loves-Chai.JS",
+      "<ButLovesToCodeMore />"
+    ],
+    loop: true,
+    delaySpeed: 2000,
+  })
+
   return (
     <div className='col-[1/3] md:col-auto'>
       <h1 className="flex items-center max-[576px]:text-4xl text-big mb-1"> 
@@ -62,7 +72,8 @@ const Data = () => {
         Software Engineer
       </h3>
       <p className="mb-10 max-w-sm lg:mb-12">
-        I'm frontend Developer based in india, and I'm very passionate and dediacted to my work.
+        <span className='mr-2'>{text}</span>
+        <Cursor cursorColor='#F7AB0A' />
       </p>
       <a href="#contact" className="button buttonFlex">
         Say Hello

@@ -36,7 +36,7 @@
   }
 
   .sectionTitle{
-    @apply text-4xl text-[#333333] my-3
+    @apply text-4xl text-titleColor my-3
   }
 
   .sectionSubtitle{
@@ -49,7 +49,7 @@
   }
 
   .navLink{
-    @apply flex flex-col items-center text-sm text-[#333333] font-medium hover:text-[#000000] transition-[0.3s];
+    @apply flex flex-col items-center text-sm text-textColor font-medium hover:text-titleColorDark transition-[0.3s];
   }
 
   .navIcon{
@@ -57,15 +57,15 @@
   }
 
   .socialIcon{
-    @apply text-xl hover:text-[#000000]
+    @apply text-xl hover:text-titleColorDark
   }
 
   .aboutBox {
-    @apply bg-[#fff] border-[1px] border-solid border-[rgba(0,0,0,0.1)] rounded-xl text-center px-2 py-3 lg:px-5 lg:py-4
+    @apply bg-containerColor border-[1px] border-solid border-[rgba(0,0,0,0.1)] rounded-xl text-center px-2 py-3 lg:px-5 lg:py-4
   }
 
   .aboutIcon {
-    @apply text-h1 text-[#333333] mb-2
+    @apply text-h1 text-titleColor mb-2
   }
 
   .aboutTitle {
@@ -77,7 +77,7 @@
   }
 
   .skillsContent {
-    @apply bg-[#fff] border-[1px] border-solid border-[rgba(0,0,0,0.1)] p-6 sm:py-8 sm:px-16 rounded-3xl
+    @apply bg-containerColor border-[1px] border-solid border-[rgba(0,0,0,0.1)] p-6 sm:py-8 sm:px-16 rounded-3xl
   }
 
   .skillsTitle {
@@ -97,7 +97,7 @@
   }
 
   .skillsIcon {
-    @apply text-base text-[#333333]
+    @apply text-base text-titleColor
   }
 
   .skillsName {
@@ -109,7 +109,7 @@
   }
 
   .qualificationButton {
-    @apply text-h3 font-medium text-[#333333] my-0 mx-3 sm:mx-4 cursor-pointer hover:text-[#000000]
+    @apply text-h3 font-medium text-textColor my-0 mx-3 sm:mx-4 cursor-pointer hover:text-titleColorDark
   }
 
   .qualificationIcon {
@@ -117,7 +117,7 @@
   }
 
   .qualificationActive {
-    @apply text-[#000000]
+    @apply text-titleColorDark
   }
 
   .qualificationContent {
@@ -145,27 +145,27 @@
   }
 
   .qualificationRounder {
-    @apply inline-block w-3 h-3 bg-[#757575] rounded-full
+    @apply inline-block w-3 h-3 bg-textColor rounded-full
   }
 
   .qualificationLine {
-    @apply block w-[1px] h-full bg-[#757575] translate-x-[6px] -translate-y-[7px]
+    @apply block w-[1px] h-full bg-textColor translate-x-[6px] -translate-y-[7px]
   }
 
   .projectItem {
-    @apply text-[#333333] py-1 px-3 font-medium rounded-lg capitalize cursor-pointer hover:bg-[#333333] hover:text-[#fff]
+    @apply text-titleColor py-1 px-3 font-medium rounded-lg capitalize cursor-pointer hover:bg-titleColor hover:text-containerColor
   }
 
   .contactFormInput {
-    @apply outline-none border-none rounded-lg w-full text-base p-4 bg-[#fafafa]
+    @apply outline-none border-none rounded-lg w-full text-base p-4 bg-bodyColor
   }
 
   .footerLink {
-    @apply 	text-[#333333] hover:text-[#000000]
+    @apply 	text-titleColor hover:text-titleColorDark
   }
 
   .footerSocialIcon {
-    @apply bg-[#333333] text-[#fff] text-lg p-2 rounded-full inline-flex justify-center items-center hover:bg-[#000000]
+    @apply bg-titleColor text-containerColor text-lg p-2 rounded-full inline-flex justify-center items-center hover:bg-titleColorDark
   }
 
   /*=============== LAYOUT ===============*/
@@ -179,7 +179,7 @@
 
   /*=============== BUTTONS ===============*/
   .button{
-    @apply bg-[#333333] rounded-2xl inline-block font-medium py-5 px-8 text-white hover:bg-[#000000] md:py-4 md:px-7 font-poppins cursor-pointer
+    @apply bg-titleColor rounded-2xl inline-block font-medium py-5 px-8 text-white hover:bg-titleColorDark md:py-4 md:px-7 font-poppins cursor-pointer
   }
 
   .buttonIcon{
@@ -192,7 +192,7 @@
 
   @media screen and (max-width: 768px) {
     .navMenu{
-      @apply fixed bottom-[-100%] left-0 w-full bg-[#fafafa] pt-8 px-1 sm:px-6 pb-16 shadow-[0_-1px_4px_rgba(0,0,0,0.15)] rounded-t-3xl rounded-r-3xl;
+      @apply fixed bottom-[-100%] left-0 w-full bg-bodyColor pt-8 px-1 sm:px-6 pb-16 shadow-[0_-1px_4px_rgba(0,0,0,0.15)] rounded-t-3xl rounded-r-3xl;
       transition: 0.3s;
     }
   }

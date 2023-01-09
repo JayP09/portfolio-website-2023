@@ -19,7 +19,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         
       </Head>
-      <main className="bg-[#fafafa] text-[#757575] scroll-smooth">
+      <main className="bg-bodyColor text-textColor scroll-smooth">
         {/* Header */}
         <Header />
 

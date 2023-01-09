@@ -23,6 +23,13 @@ module.exports = {
           "0%" : {transform: 'translateY(0)'},
           "30%": {transform: 'translateY(3.75rem)'}
         }
+      },
+      colors: {
+        "titleColor": "#333333",
+        "titleColorDark": "#000000",
+        "textColor": "#757575",
+        "bodyColor": "#fafafa",
+        "containerColor" : "#fff"
       }
     },
   },
