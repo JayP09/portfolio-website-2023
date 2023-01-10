@@ -2,8 +2,8 @@ import ProjectImage1 from "../../public/dustecosystem.jpg"
 import ProjectImage2 from "../../public/twittercloneimage.png"
 import ProjectImage3 from "../../public/nftmarketplace.png"
 import ProjectImage4 from "../../public/memegenerator.png"
-import ProjectImage5 from "../../public/TragicSimpbot.jpg"
-import ProjectImage6 from "../../public/JokeApp.jpg"
+import ProjectImage5 from "../../public/tragicsimp.jpg"
+import ProjectImage6 from "../../public/jokeappimage.jpg"
 import ProjectImage7 from "../../public/100DaysOfWeb3.jpg"
 
 export const projectsData = [

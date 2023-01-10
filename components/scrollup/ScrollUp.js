@@ -1,9 +1,8 @@
 import React, {useEffect, useState} from 'react'
 import { UilArrowUp } from '@iconscout/react-unicons'
-import Image from 'next/image'
 import { motion } from 'framer-motion';
 
-const Scrollup = () => {
+const ScrollUp = () => {
   const [clientWindowHeight, setClientWindowHeight] = useState("");
 
   const handleScroll = () => {
@@ -28,4 +27,4 @@ const Scrollup = () => {
   )
 }
 
-export default Scrollup
+export default ScrollUp
