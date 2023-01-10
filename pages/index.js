@@ -11,7 +11,7 @@ import Scrollup from '../components/scrollup/Scrollup'
 
 export default function Home() {
   return (
-    <div className='scroll-smooth font-poppins text-base'>
+    <div className='font-poppins text-base'>
       <Head>
         <title>Portfolio Website</title>
         <meta name="description" content="Portfolio Website" />
@@ -19,7 +19,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         
       </Head>
-      <main className="bg-bodyColor text-textColor scroll-smooth">
+      <main className="bg-bodyColor text-textColor">
         {/* Header */}
         <Header />
 

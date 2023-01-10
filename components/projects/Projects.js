@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react'
 import { projectsData, projectNav } from './Data'
 import ProjectsItems from './ProjectItems'
+import { motion } from 'framer-motion';
 
 const Projects = () => {
   const [item, setItem] = useState({name: "all"})
   const [projects, setProjects] = useState([])
   const [active, setActive] = useState(0)
+  const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
 
   useEffect(() => {
     if(item.name === "all") {
@@ -19,13 +21,18 @@ const Projects = () => {
   }, [item]);
 
   const handleChange = (e, index) => {
-    setItem({name: e.target.textContent })
     setActive(index)
+    setAnimateCard([{ y: 100, opacity: 0 }]);
+    
+    setTimeout(() => {
+      setAnimateCard([{ y: 0, opacity: 1 }]);
+      setItem({name: e.target.textContent })
+    }, 500);
   }
 
   return (
     <>
-       <div className="flex justify-center items-center gap-x-2 sm:gap-x-3 mb-8">
+      <div className="flex justify-center items-center gap-x-2 sm:gap-x-3 mb-8">
         {projectNav.map((item,index) => {
           return (
             <span 
@@ -40,11 +47,16 @@ const Projects = () => {
           )
         })}
       </div>
-      <div className="flex flex-row flex-wrap gap-4 justify-center sectionContainer ">
+      <motion.div 
+        animate={animateCard}
+        transition={{ duration: 0.5, delayChildren: 0.5 }}
+        viewport={{once: true}}
+        className="flex flex-row flex-wrap gap-4 justify-center sectionContainer"
+      >
         {projects.map((project) => {
           return <ProjectsItems project={project} key={project.id}/>
         })}
-      </div>
+      </motion.div>
     </>
   )
 }

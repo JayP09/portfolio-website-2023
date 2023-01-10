@@ -3,6 +3,7 @@ import React from 'react'
 import HandIcon from "../../public/hand.svg"
 import SendIcon from "../../public/send.svg"
 import { Cursor, useTypewriter } from 'react-simple-typewriter'
+import { motion } from 'framer-motion';
 
 const Data = () => {
   const [text, count] = useTypewriter({
@@ -15,7 +16,21 @@ const Data = () => {
   })
 
   return (
-    <div className='col-[1/3] md:col-auto'>
+    <motion.div 
+      initial={{
+        opacity: 0,
+        scale: 0.8
+      }}
+      animate= {{
+        opacity: 1,
+        scale: 1,
+      }}
+      transition={{
+        duration: 1
+      }}
+      viewport={{once: true}}
+      className='col-[1/3] md:col-auto'
+    >
       <h1 className="flex items-center max-[576px]:text-4xl text-big mb-1"> 
         Jay Panchal
         <span className="ml-[1px]">
@@ -84,7 +99,7 @@ const Data = () => {
           />
         </span>
       </a>
-    </div>
+    </motion.div>
   )
 }
 

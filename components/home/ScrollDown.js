@@ -44,7 +44,7 @@ const ScrollDown = () => {
         <span className="text-titleColor font-medium mr-1 ml-[2px]">
           Scroll Down
         </span>
-        <UilArrowDown className="text-titleColor text-xl"/>
+        <UilArrowDown className="text-titleColor text-xl animate-bounce"/>
       </a>
     </div>
   )

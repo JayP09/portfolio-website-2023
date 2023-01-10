@@ -3,23 +3,46 @@ import React from 'react'
 import Profilepic from "../../public/7066.png"
 // import CV from "../../public/jay.pdf"
 import Info from './Info'
+import { motion } from 'framer-motion';
 
 const About = () => {
   return (
     <section className="section" id="about">
-      <h2 className="sectionTitle">
-        About Me
-      </h2>
-      <span className="sectionSubtitle">
-        My introduction
-      </span>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ y: [-50, 0], opacity: 1 }}
+        viewport={{once: true}}
+      >
+        <h2 className="sectionTitle">
+          About Me
+        </h2>
+        <span className="sectionSubtitle">
+          My introduction
+        </span>
+      </motion.div>
+      
       <div className="grid-cols-1 gap-y-10 lg:gap-y-0 lg:grid-cols-2 items-center sm:mx-auto lg:gap-x-16 sectionContainer gridContainer">
-        <Image 
-          src={Profilepic}
-          className="w-56 lg:w-[350px] justify-self-center rounded-3xl"
-          alt="Profile Pic"
-        />
-        <div className='text-center lg:text-justify'>
+        <motion.div
+          initial={{ x: 0, opacity: 0 }}
+          whileInView={{ x: [-250, 0], opacity: 1 }}
+          transition={{ duration: 1 }}
+          viewport={{once: true}}
+          className="justify-self-center"
+        >
+          <Image
+            src={Profilepic}
+            className="w-56 lg:w-[350px] justify-self-center rounded-3xl"
+            alt="Profile Pic"
+          />
+        </motion.div>
+       
+        <motion.div 
+          initial={{ x: 0, opacity: 0 }}
+          whileInView={{ x: [250, 0], opacity: 1 }}
+          transition={{ duration: 1 }}
+          viewport={{once: true}}
+          className='text-center lg:text-justify'
+        >
           <Info />
           <div className="flex justify-center max-w-md items-center mx-auto">
             <p className='p-0 sm:p-2 lg:pl-0 lg:py-0 lg:pr-16 mb-8 lg:mb-10'>
@@ -27,7 +50,12 @@ const About = () => {
             </p>
           </div>
           
-          <a className="button buttonFlex">
+          <motion.a 
+            className="button buttonFlex"
+            whileHover={{ scale: 1.1 }}
+            transition={{ duration: 0.3 }}
+            viewport={{once: true}}
+          >
             Downlaod CV
             <svg
               className="buttonIcon"
@@ -54,8 +82,8 @@ const About = () => {
                 fill="#fff"
               ></path>
             </svg>
-          </a>
-        </div>
+          </motion.a>
+        </motion.div>
       </div>
     </section>
   )

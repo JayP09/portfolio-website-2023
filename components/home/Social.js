@@ -1,18 +1,67 @@
 import React from 'react'
 import { UilGithubAlt,UilTwitterAlt, UilLinkedinAlt  } from '@iconscout/react-unicons'
+import { motion } from 'framer-motion';
 
 const Social = () => {
   return (
     <div className="grid auto-cols-max gap-y-4">
-      <a href='https://github.com/JayP09' className="socialIcon" target="_blank">
+      <motion.a 
+        href='https://github.com/JayP09' 
+        className="socialIcon" 
+        target="_blank"
+        initial={{
+          opacity: 0,
+          scale: 0.8
+        }}
+        animate= {{
+          opacity: 1,
+          scale: 1,
+        }}
+        transition={{
+          duration: 1
+        }}
+        viewport={{once: true}}
+      >
         <UilGithubAlt />
-      </a>
-      <a href='https://twitter.com/JayPTwts' className="socialIcon" target="_blank">
+      </motion.a>
+      <motion.a 
+        href='https://twitter.com/JayPTwts' 
+        className="socialIcon" 
+        target="_blank"
+        initial={{
+          opacity: 0,
+          scale: 0.8
+        }}
+        animate= {{
+          opacity: 1,
+          scale: 1,
+        }}
+        transition={{
+          duration: 1
+        }}
+        viewport={{once: true}}
+      >
         <UilTwitterAlt />
-      </a>
-      <a href='https://www.linkedin.com/in/jaypanchal09/' className="socialIcon" target="_blank">
+      </motion.a>
+      <motion.a 
+        href='https://www.linkedin.com/in/jaypanchal09/' 
+        className="socialIcon" 
+        target="_blank"
+        initial={{
+          opacity: 0,
+          scale: 0.8
+        }}
+        animate= {{
+          opacity: 1,
+          scale: 1,
+        }}
+        transition={{
+          duration: 1
+        }}
+        viewport={{once: true}}
+      >
         <UilLinkedinAlt />
-      </a>
+      </motion.a>
     </div>
   )
 }

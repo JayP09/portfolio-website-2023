@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { motion } from 'framer-motion';
 
 const Qualification = () => {
   const [toggleState, setToggleState] = useState(1)
@@ -9,9 +10,20 @@ const Qualification = () => {
 
   return (
     <section className="qualification section" id="">
-      <h2 className="sectionTitle">Qualification</h2>
-      <span className="sectionSubtitle">My Personal Journey</span>
-      <div className="qualification__container max-w-[768px] sectionContainer mx-6 md:mx-auto">
+      <motion.div
+        initial={{opacity: 0}}
+        whileInView={{y: [-50, 0], opacity: 1}}
+        viewport={{once: true}} 
+      >
+        <h2 className="sectionTitle">Qualification</h2>
+        <span className="sectionSubtitle">My Personal Journey</span>
+      </motion.div>
+      
+      <motion.div
+        initial={{opacity: 0}}
+        whileInView={{y: [-50, 0], opacity: 1}}
+        viewport={{once: true}}
+        className="qualification__container max-w-[768px] sectionContainer mx-6 md:mx-auto">
         <div className="qualification__tabs flex justify-center mb-8">
           <div 
             className={toggleState === 1 ? "qualificationButton qualificationActive buttonFlex":"qualificationButton buttonFlex"}
@@ -28,7 +40,10 @@ const Qualification = () => {
           </div>
         </div>
         <div className="qualification__sections grid grid-cols-[initial] sm:grid-cols-[0.6fr] justify-center">
-          <div 
+          <motion.div 
+            initial={{opacity: 0}}
+            whileInView={{y: [-50, 0], opacity: 1}}
+            viewport={{once: true}}
             className={toggleState === 1 ? "qualificationContent qualificationContentActive": "qualificationContent"}
           >
             <div className='qualificationData'>
@@ -79,9 +94,12 @@ const Qualification = () => {
                 <span className='qualificationLine'></span>
               </div>
             </div>
-          </div>
+          </motion.div>
 
-          <div 
+          <motion.div 
+            initial={{opacity: 0}}
+            whileInView={{y: [-50, 0], opacity: 1}}
+            viewport={{once: true}}
             className={toggleState === 2 ? "qualificationContent qualificationContentActive": "qualificationContent"}
           >
             <div className='qualificationData'>
@@ -115,9 +133,9 @@ const Qualification = () => {
               </div>
               
             </div>
-          </div>
+          </motion.div>
         </div>
-      </div>
+      </motion.div>
     </section>
   )
 }
