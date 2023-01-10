@@ -31,8 +31,8 @@ const Header = () => {
 						}}
 						viewport={{once: true}}
 					>
-						<a className="text-titleColor font-medium">
-								Jay
+						<a className="text-titleColor font-medium text-xl">
+							{"<"+"Jay"+"/>"}
 						</a>
 					</motion.div>
 				</AnimatePresence>
@@ -78,11 +78,6 @@ const Header = () => {
 								<UilFile className="navIcon"/> Skills
 								</a>
 						</motion.li>
-						{/* <li>
-								<a href="#services" className="navLink">
-								<UilBriefcaseAlt className="navIcon"/> Services
-								</a>
-						</li> */}
 						<motion.li
 							initial={{ x: -100, opacity: 0 }}
 							animate={{ x: 0, opacity: 1 }}

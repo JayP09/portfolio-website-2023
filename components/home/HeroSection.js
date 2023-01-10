@@ -1,7 +1,7 @@
 import React from 'react'
 import Social from './Social'
 import Data from './Data'
-import ProfilePic from "../../public/profile.jpg"
+import ProfilePic from "../../public/profilepic.jpg"
 import ScrollDown from './ScrollDown'
 import { motion } from 'framer-motion';
 

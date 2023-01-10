@@ -10,7 +10,7 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        "profilepic":"url('../public/7066.png')"
+        "profilepic":"url('../public/profilepic.jpg')"
       },
       fontSize: {
         "big":["3.5rem","1"],

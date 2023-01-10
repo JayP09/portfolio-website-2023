@@ -5,6 +5,7 @@
 @layer base{
   html {
     scroll-behavior: smooth;
+    @apply selection:bg-textColor selection:text-containerColor
   }
   
   h1,h2,h3{
@@ -197,7 +198,8 @@
   @media screen and (max-width: 768px) {
     .navMenu{
       @apply fixed bottom-[-100%] left-0 w-full bg-bodyColor pt-8 px-1 sm:px-6 pb-16 shadow-[0_-1px_4px_rgba(0,0,0,0.15)] rounded-t-3xl rounded-r-3xl;
-      transition: 0.3s;
+      transition: 0.5s;
+      behavior: smooth;
     }
   }
 

@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import Profilepic from "../../public/7066.png"
-// import CV from "../../public/jay.pdf"
+import Profilepic from "../../public/profilepic.jpg"
 import Info from './Info'
 import { motion } from 'framer-motion';
 
@@ -55,6 +54,7 @@ const About = () => {
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.3 }}
             viewport={{once: true}}
+            href="/Jay-Resume.pdf"
           >
             Downlaod CV
             <svg
