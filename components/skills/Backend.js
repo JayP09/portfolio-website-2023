@@ -23,6 +23,13 @@ const Backend = () => {
             </div>
           </div>
           
+          <div className='skillsData'>
+            <i className='bx bx-badge-check skillsIcon'></i>
+            <div>
+              <h3 className="skillsName">Solidity</h3>
+              <span className='skillsLevel'>Basic</span>
+            </div>
+          </div>
 
         </div>
         <div className='skillsGroup'>
@@ -38,7 +45,15 @@ const Backend = () => {
           <div className='skillsData'>
             <i className='bx bx-badge-check skillsIcon'></i>
             <div>
-              <h3 className="skillsName">Node Js</h3>
+              <h3 className="skillsName">Hardhat</h3>
+              <span className='skillsLevel'>Basic</span>
+            </div>
+          </div>
+
+          <div className='skillsData'>
+            <i className='bx bx-badge-check skillsIcon'></i>
+            <div>
+              <h3 className="skillsName">Java</h3>
               <span className='skillsLevel'>Basic</span>
             </div>
           </div>
