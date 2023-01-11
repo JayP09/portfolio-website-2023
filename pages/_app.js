@@ -1,16 +1,16 @@
+import Head from 'next/head'
+import { Analytics } from '@vercel/analytics/react';
 import '../styles/globals.css'
-import React, {useState, useEffect} from "react"
-import {motion} from "framer-motion"
-import LoadingScreen from '../components/loadingscreen/LoadingScreen';
 
-export default function App({ Component, pageProps }) {
-  const [showLoading, setShowLoading] = useState(true);
-  
-  if (!showLoading) {
-    return <Component {...pageProps} />
-  }
-  
+export default function App({ Component, pageProps }) { 
   return (
-    <LoadingScreen showLoading={showLoading} setShowLoading={setShowLoading} />
-  );
+    <>
+      <Head>
+        <title>Jay Panchal • Software Engineer </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
+      <Component {...pageProps} />
+      <Analytics />
+    </>
+  )
 }
