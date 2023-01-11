@@ -1,9 +1,8 @@
 import React from 'react'
+import { motion } from 'framer-motion';
 import Social from './Social'
 import Data from './Data'
-import ProfilePic from "../../public/profilepic.jpg"
 import ScrollDown from './ScrollDown'
-import { motion } from 'framer-motion';
 
 const HeroSection = () => {
   return (

@@ -1,8 +1,8 @@
 import React,{ useRef } from 'react'
-import SendIcon from "../../public/send.svg"
 import Image from 'next/image'
 import emailjs from '@emailjs/browser';
 import { motion } from 'framer-motion';
+import SendIcon from "../../public/send.svg"
 
 const Contact = () => {
   const form = useRef();

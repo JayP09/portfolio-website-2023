@@ -1,8 +1,7 @@
 import Image from 'next/image'
-import React from 'react'
-import Profilepic from "../../public/profilepic.jpg"
-import Info from './Info'
 import { motion } from 'framer-motion';
+import Info from './Info'
+import Profilepic from "../../public/profilepic.jpg"
 
 const About = () => {
   return (

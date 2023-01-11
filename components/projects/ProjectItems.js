@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import {motion} from "framer-motion"
-import { UilEye, UilGithub } from '@iconscout/react-unicons'
+import { UilEye } from '@iconscout/react-unicons'
 
 
 const ProjectItems = ({project}) => {

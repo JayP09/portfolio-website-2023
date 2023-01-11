@@ -1,6 +1,4 @@
 import React from 'react'
-import ScrollIcon from "../../public/scroll.svg"
-import Image from 'next/image'
 import { UilArrowDown } from '@iconscout/react-unicons'
 
 const ScrollDown = () => {

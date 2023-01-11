@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react'
-import { UilArrowUp } from '@iconscout/react-unicons'
 import { motion } from 'framer-motion';
+import { UilArrowUp } from '@iconscout/react-unicons'
 
 const ScrollUp = () => {
   const [clientWindowHeight, setClientWindowHeight] = useState("");

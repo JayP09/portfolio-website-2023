@@ -1,9 +1,8 @@
-import Image from 'next/image'
 import React from 'react'
-import HandIcon from "../../public/hand.svg"
-import SendIcon from "../../public/send.svg"
+import Image from 'next/image'
 import { Cursor, useTypewriter } from 'react-simple-typewriter'
 import { motion } from 'framer-motion';
+import SendIcon from "../../public/send.svg"
 
 const Data = () => {
   const [text, count] = useTypewriter({

@@ -1,6 +1,6 @@
 import React from 'react'
-import Projects from './Projects'
 import { motion } from 'framer-motion';
+import Projects from './Projects'
 
 const Project = () => {
   return (

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
+import { motion } from 'framer-motion';
 import { projectsData, projectNav } from './Data'
 import ProjectsItems from './ProjectItems'
-import { motion } from 'framer-motion';
 
 const Projects = () => {
   const [item, setItem] = useState({name: "all"})

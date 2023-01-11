@@ -1,6 +1,6 @@
 import React from 'react'
-import { UilGithubAlt,UilTwitterAlt, UilLinkedinAlt  } from '@iconscout/react-unicons'
 import { motion } from 'framer-motion';
+import { UilGithubAlt,UilTwitterAlt, UilLinkedinAlt  } from '@iconscout/react-unicons'
 
 const Social = () => {
   return (
