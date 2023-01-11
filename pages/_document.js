@@ -4,9 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <title>Jay Panchal • Software Engineer </title>
-        <meta name="description" content="Portfolio Website" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Software Engineer with experience in web development using HTML, CSS, JavaScript, React and Next.js. I have a degree in Computer Science, and I am passionate about web development. My portfolio showcases my skills and experience." />
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
@@ -16,8 +14,15 @@ export default function Document() {
         <meta property="og:title" content="Jay Panchal • Software Developer" />
         <meta property="og:site_name" content="Jay Panchal" />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="" />
+        <meta name="og:description" content="Software Engineer with experience in web development using HTML, CSS, JavaScript, React and Next.js. I have a degree in Computer Science, and I am passionate about web development. My portfolio showcases my skills and experience." />
+        <link rel="canonical" href="https://jaypanchal.me" />
         <meta property="og:image" content="" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@JayPTwts" />
+        <meta name="twitter:title" content="Jay Panchal Portfolio" />
+        <meta name="twitter:description" content="Software Engineer with experience in web development using HTML, CSS, JavaScript, React and Next.js. I have a degree in Computer Science, and I am passionate about web development. My portfolio showcases my skills and experience." />
+        <meta name="twitter:image" content="" />
+        <meta name="twitter:creator" content="@JayPTwts"/>
       </Head>
       <body>
         <Main />
