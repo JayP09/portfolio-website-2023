@@ -53,7 +53,7 @@ const About = () => {
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.3 }}
             viewport={{once: true}}
-            href="/Jay-Resume-2.pdf"
+            href="/Jay-Resume-3.pdf"
           >
             Downlaod CV
             <svg
