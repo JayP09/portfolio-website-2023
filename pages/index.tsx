@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import About from '../components/about/About'
 import Header from '../components/header/Header'
 import HeroSection from '../components/home/HeroSection'
@@ -8,7 +7,7 @@ import Project from '../components/projects/Project'
 import Contact from '../components/contact/Contact'
 import Footer from '../components/footer/Footer'
 import ScrollUp from '../components/scrollup/ScrollUp'
-import React, {useState, useEffect} from "react"
+import React, {useState } from "react"
 import LoadingScreen from '../components/loadingscreen/LoadingScreen'
 
 export default function Home() {

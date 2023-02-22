@@ -17,13 +17,13 @@ const Footer = () => {
           </li>
         </ul>
         <div className='footerSocial flex justify-center gap-x-5'>
-          <a href='https://github.com/JayP09' className="footerSocialIcon" target="_blank">
+          <a href='https://github.com/JayP09' className="footerSocialIcon" target="_blank" rel="noreferrer">
             <i className='bx bxl-github'></i>
           </a>
-          <a href='https://twitter.com/JayPTwts' className="footerSocialIcon" target="_blank">
+          <a href='https://twitter.com/JayPTwts' className="footerSocialIcon" target="_blank" rel="noreferrer">
             <i className='bx bxl-twitter' ></i>
           </a>
-          <a href='https://www.linkedin.com/in/jaypanchal09/' className="footerSocialIcon" target="_blank">
+          <a href='https://www.linkedin.com/in/jaypanchal09/' className="footerSocialIcon" target="_blank" rel="noreferrer">
             <i className='bx bxl-linkedin-square' ></i>
           </a>
         </div>

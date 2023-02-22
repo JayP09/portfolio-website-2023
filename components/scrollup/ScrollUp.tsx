@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { UilArrowUp } from '@iconscout/react-unicons'
 
 const ScrollUp = () => {
-  const [clientWindowHeight, setClientWindowHeight] = useState("");
+  const [clientWindowHeight, setClientWindowHeight] = useState<number>(0);
 
   const handleScroll = () => {
     setClientWindowHeight(window.scrollY);

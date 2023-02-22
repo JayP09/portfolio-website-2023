@@ -20,13 +20,13 @@ const Projects = () => {
     }
   }, [item]);
 
-  const handleChange = (e, index) => {
+  const handleChange = (e: React.MouseEvent<HTMLSpanElement, MouseEvent>, index: React.SetStateAction<number>) => {
     setActive(index)
-    setAnimateCard([{ y: 100, opacity: 0 }]);
+    setAnimateCard({ y: 100, opacity: 0 });
     
     setTimeout(() => {
-      setAnimateCard([{ y: 0, opacity: 1 }]);
-      setItem({name: e.target.textContent })
+      setAnimateCard({ y: 0, opacity: 1 });
+      setItem({name: (e.target as HTMLElement).textContent })
     }, 500);
   }
 

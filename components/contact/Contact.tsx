@@ -40,18 +40,16 @@ const Contact = () => {
           <div className="flex flex-col items-start w-full gap-4">
             <h1 className="sectionTitle text-left mb-0">Get in Touch ✨</h1>
             <p className="text-xl text-titleColor">I’m always open to collaborate on a project or hear about an opportunity!</p>
-            {/* <span className='sectionSubtitle'>Fill the form to make enquiries, or if you prefer, you can schedule a call with me.</span> */}
-
           </div>
 
           <div className="flex flex-col gap-8">
             <div className="flex flex-col gap-3">
               <span className='text-sm mb-0'>want to call me?</span>
-              <a href="https://calendly.com/jayp09/30min" className='text-xl hover:underline hover:text-titleColorDark' target="_blank">Schedule a call with me</a>
+              <a href="https://calendly.com/jayp09/30min" className='text-xl hover:underline hover:text-titleColorDark' target="_blank" rel="noreferrer">Schedule a call with me</a>
             </div>
             <div className="flex flex-col gap-3">
               <span className='text-sm mb-0'>Just want to email me?</span>
-              <a href="mailto:panchalj272@gmail.com" className='text-xl hover:underline hover:text-titleColorDark' target="_blank">panchalj272@gmail.com</a>
+              <a href="mailto:panchalj272@gmail.com" className='text-xl hover:underline hover:text-titleColorDark' target="_blank" rel="noreferrer">panchalj272@gmail.com</a>
             </div>
           </div>
         </motion.div>
@@ -76,8 +74,8 @@ const Contact = () => {
 
             <textarea 
               name="message"
-              cols="30"
-              rows="5" 
+              cols={30}
+              rows={5} 
               className="contactFormInput resize-none"
               placeholder='Type your message'
               />
@@ -94,63 +92,6 @@ const Contact = () => {
         </motion.div>
 
       </motion.div>
-
-      {/* <div className="contactContainer sectionContainer gridContainer">
-        <div className="contactContent">
-          <h3 className="contactTitle">Talk to me</h3>
-
-          <div className="contactInfo">
-            <div className='contactCard'>
-              <i className='bx bx contactCardIcon'></i>
-
-              <h3 className="contactCardTitle">Email</h3>
-              <span className="contactCardData">panchalj272@gmail.com</span>
-
-              <a 
-                href="" 
-                className="contactButton"
-              >
-                Write me {" "}
-                <i className="bx bx-right-arrow-alt contactButtonIcon"></i>
-              </a>
-            </div>
-
-            <div className='contactCard'>
-              <i className='bx bx contactCardIcon'></i>
-
-              <h3 className="contactCardTitle">Whatsapp</h3>
-              <span className="contactCardData">9892124258</span>
-
-              <a 
-                href="" 
-                className="contactButton"
-              >
-                Write me {" "}
-                <i className="bx bx-right-arrow-alt contactButtonIcon"></i>
-              </a>
-            </div>
-
-            <div className='contactCard'>
-              <i className='bx bx contactCardIcon'></i>
-
-              <h3 className="contactCardTitle">Email</h3>
-              <span className="contactCardData">panchalj272@gmail.com</span>
-
-              <a 
-                href="" 
-                className="contactButton"
-              >
-                Write me {" "}
-                <i className="bx bx-right-arrow-alt contactButtonIcon"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div className="contactContent">
-          <h3 className="contactTitle">Write me your project</h3>
-        </div>
-      </div> */}
     </section>
   )
 }

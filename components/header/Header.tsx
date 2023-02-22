@@ -4,7 +4,7 @@ import { UilEstate,UilUser, UilFile, UilBriefcaseAlt, UilScenery,UilMessage, Uil
 
 const Header = () => {
 	/* Change Background Header */
-	const [clientWindowHeight, setClientWindowHeight] = useState("");
+	const [clientWindowHeight, setClientWindowHeight] = useState<number>(0);
 
   const handleScroll = () => {
     setClientWindowHeight(window.scrollY);
