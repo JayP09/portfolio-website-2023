@@ -23,6 +23,7 @@ const Data = () => {
       }}
       transition={{
         duration: 1,
+        delay: 2.25
       }}
       viewport={{ once: true }}
       className="col-[1/3] md:col-auto"

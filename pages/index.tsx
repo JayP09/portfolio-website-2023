@@ -13,20 +13,15 @@ import LoadingScreen from '../components/loadingscreen/LoadingScreen'
 export default function Home() {
   const [showLoading, setShowLoading] = useState(true)
 
-  if (showLoading) {
-    return (
-      <>
-        <LoadingScreen
+  return (
+    <div className="font-poppins text-base">
+      <div className={showLoading ? "flex" : "hidden"}>
+        <LoadingScreen 
           showLoading={showLoading}
           setShowLoading={setShowLoading}
         />
-      </>
-    )
-  }
-
-  return (
-    <div className="font-poppins text-base">
-      <main className="bg-bodyColor text-textColor">
+      </div>
+      <main className={`${showLoading ? "hidden" : "block"} bg-bodyColor text-textColor`}>
         {/* Header */}
         <Header />
 

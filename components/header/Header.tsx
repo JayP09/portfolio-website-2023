@@ -4,7 +4,6 @@ import {
   UilEstate,
   UilUser,
   UilFile,
-  UilBriefcaseAlt,
   UilScenery,
   UilMessage,
   UilTimes,
@@ -41,6 +40,7 @@ const Header = () => {
             exit={{ y: 100, opacity: 0 }}
             transition={{
               duration: 1,
+              delay: 2.25
             }}
             viewport={{ once: true }}
           >
@@ -58,6 +58,7 @@ const Header = () => {
               exit={{ x: 100, opacity: 0 }}
               transition={{
                 duration: 1,
+                delay: 2.25
               }}
               viewport={{ once: true }}
             >
@@ -79,6 +80,7 @@ const Header = () => {
               exit={{ x: 100, opacity: 0 }}
               transition={{
                 duration: 1,
+                delay: 2.25
               }}
               viewport={{ once: true }}
             >
@@ -100,6 +102,7 @@ const Header = () => {
               exit={{ x: 100, opacity: 0 }}
               transition={{
                 duration: 1,
+                delay: 2.25
               }}
               viewport={{ once: true }}
             >
@@ -121,6 +124,7 @@ const Header = () => {
               exit={{ x: 100, opacity: 0 }}
               transition={{
                 duration: 1,
+                delay: 2.25
               }}
               viewport={{ once: true }}
             >
@@ -142,6 +146,7 @@ const Header = () => {
               exit={{ x: 100, opacity: 0 }}
               transition={{
                 duration: 1,
+                delay: 2.25
               }}
               viewport={{ once: true }}
             >

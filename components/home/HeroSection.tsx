@@ -24,6 +24,7 @@ const HeroSection = () => {
             }}
             transition={{
               duration: 1,
+              delay: 2.25
             }}
             viewport={{ once: true }}
             className="profilePic"
