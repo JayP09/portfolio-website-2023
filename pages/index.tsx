@@ -7,22 +7,25 @@ import Project from '../components/projects/Project'
 import Contact from '../components/contact/Contact'
 import Footer from '../components/footer/Footer'
 import ScrollUp from '../components/scrollup/ScrollUp'
-import React, {useState } from "react"
+import React, { useState } from 'react'
 import LoadingScreen from '../components/loadingscreen/LoadingScreen'
 
 export default function Home() {
-  const [showLoading, setShowLoading] = useState(true);
+  const [showLoading, setShowLoading] = useState(true)
 
-  if(showLoading) {
+  if (showLoading) {
     return (
       <>
-        <LoadingScreen showLoading={showLoading} setShowLoading={setShowLoading} />
+        <LoadingScreen
+          showLoading={showLoading}
+          setShowLoading={setShowLoading}
+        />
       </>
-    );
+    )
   }
 
   return (
-    <div className='font-poppins text-base'>
+    <div className="font-poppins text-base">
       <main className="bg-bodyColor text-textColor">
         {/* Header */}
         <Header />

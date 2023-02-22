@@ -1,36 +1,33 @@
 import React from 'react'
 import Image from 'next/image'
 import { Cursor, useTypewriter } from 'react-simple-typewriter'
-import { motion } from 'framer-motion';
-import SendIcon from "../../public/send.svg"
+import { motion } from 'framer-motion'
+import SendIcon from '../../public/send.svg'
 
 const Data = () => {
   const [text, count] = useTypewriter({
-    words: [
-      "Guy-who-loves-Chai.JS",
-      "<ButLovesToCodeMore />"
-    ],
+    words: ['Guy-who-loves-Chai.JS', '<ButLovesToCodeMore />'],
     loop: true,
     delaySpeed: 2000,
   })
 
   return (
-    <motion.div 
+    <motion.div
       initial={{
         opacity: 0,
-        scale: 0.8
+        scale: 0.8,
       }}
-      animate= {{
+      animate={{
         opacity: 1,
         scale: 1,
       }}
       transition={{
-        duration: 1
+        duration: 1,
       }}
-      viewport={{once: true}}
-      className='col-[1/3] md:col-auto'
+      viewport={{ once: true }}
+      className="col-[1/3] md:col-auto"
     >
-      <h1 className="flex items-center max-[576px]:text-4xl text-big mb-1"> 
+      <h1 className="flex items-center max-[576px]:text-4xl text-big mb-1">
         Jay Panchal
         <span className="ml-[1px]">
           <svg
@@ -86,16 +83,13 @@ const Data = () => {
         Software Engineer
       </h3>
       <p className="mb-10 max-w-sm lg:mb-12">
-        <span className='mr-2'>{text}</span>
-        <Cursor cursorColor='#F7AB0A' />
+        <span className="mr-2">{text}</span>
+        <Cursor cursorColor="#F7AB0A" />
       </p>
       <a href="#contact" className="button buttonFlex">
         Say Hello
-        <span className='buttonIcon'>
-          <Image 
-            src={SendIcon}
-            alt="Send Icon"
-          />
+        <span className="buttonIcon">
+          <Image src={SendIcon} alt="Send Icon" />
         </span>
       </a>
     </motion.div>

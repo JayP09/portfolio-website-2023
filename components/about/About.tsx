@@ -1,7 +1,7 @@
 import Image from 'next/image'
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion'
 import Info from './Info'
-import Profilepic from "../../public/profilepic.jpg"
+import Profilepic from '../../public/profilepic.jpg'
 
 const About = () => {
   return (
@@ -9,22 +9,18 @@ const About = () => {
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ y: [-50, 0], opacity: 1 }}
-        viewport={{once: true}}
+        viewport={{ once: true }}
       >
-        <h2 className="sectionTitle">
-          About Me
-        </h2>
-        <span className="sectionSubtitle">
-          My introduction
-        </span>
+        <h2 className="sectionTitle">About Me</h2>
+        <span className="sectionSubtitle">My introduction</span>
       </motion.div>
-      
+
       <div className="grid-cols-1 gap-y-10 lg:gap-y-0 lg:grid-cols-2 items-center sm:mx-auto lg:gap-x-16 sectionContainer gridContainer">
         <motion.div
           initial={{ x: 0, opacity: 0 }}
           whileInView={{ x: [-250, 0], opacity: 1 }}
           transition={{ duration: 1 }}
-          viewport={{once: true}}
+          viewport={{ once: true }}
           className="justify-self-center"
         >
           <Image
@@ -33,26 +29,32 @@ const About = () => {
             alt="Profile Pic"
           />
         </motion.div>
-       
-        <motion.div 
+
+        <motion.div
           initial={{ x: 0, opacity: 0 }}
           whileInView={{ x: [250, 0], opacity: 1 }}
           transition={{ duration: 1 }}
-          viewport={{once: true}}
-          className='text-center lg:text-justify'
+          viewport={{ once: true }}
+          className="text-center lg:text-justify"
         >
           <Info />
           <div className="flex justify-center max-w-md items-center mx-auto">
-            <p className='p-0 sm:p-2 lg:pl-0 lg:py-0 lg:pr-16 mb-8 lg:mb-10'>
-              I am a Software Engineer with six months of experience in HTML, CSS, JavaScript, React, and Next.js. With a degree in Computer Science and a passion for web development, I have gained valuable experience building responsive websites using modern technologies. I am a fast learner and always looking for opportunities to improve my skills and stay up-to-date with the latest developments in the field.
+            <p className="p-0 sm:p-2 lg:pl-0 lg:py-0 lg:pr-16 mb-8 lg:mb-10">
+              I am a Software Engineer with six months of experience in HTML,
+              CSS, JavaScript, React, and Next.js. With a degree in Computer
+              Science and a passion for web development, I have gained valuable
+              experience building responsive websites using modern technologies.
+              I am a fast learner and always looking for opportunities to
+              improve my skills and stay up-to-date with the latest developments
+              in the field.
             </p>
           </div>
-          
-          <motion.a 
+
+          <motion.a
             className="button buttonFlex"
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.3 }}
-            viewport={{once: true}}
+            viewport={{ once: true }}
             href="/Jay-Resume-3.pdf"
           >
             Downlaod CV

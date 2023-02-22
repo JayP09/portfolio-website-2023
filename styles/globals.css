@@ -2,18 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
+@layer base {
   html {
     scroll-behavior: smooth;
-    @apply selection:bg-textColor selection:text-containerColor
+    @apply selection:bg-textColor selection:text-containerColor;
   }
-  
-  h1,h2,h3{
+
+  h1,
+  h2,
+  h3 {
     color: #333333;
     font-weight: 600;
   }
-  
-  ul{
+
+  ul {
     list-style: none;
   }
 
@@ -33,170 +35,169 @@
   }
 }
 
-
-@layer components{
+@layer components {
   /*=============== REUSABLE CSS CLASSES ===============*/
-  .section{
-    @apply  px-0 pt-8 pb-16 md:pb-8 md:pt-24 lg:px-5 overflow-hidden
+  .section {
+    @apply px-0 pt-8 pb-16 md:pb-8 md:pt-24 lg:px-5 overflow-hidden;
   }
 
-  .sectionTitle{
-    @apply text-4xl text-titleColor my-3
+  .sectionTitle {
+    @apply text-4xl text-titleColor my-3;
   }
 
-  .sectionSubtitle{
-    @apply block text-sm mb-12 md:mb-16
+  .sectionSubtitle {
+    @apply block text-sm mb-12 md:mb-16;
   }
 
   .sectionTitle,
-  .sectionSubtitle{
-    @apply text-center
+  .sectionSubtitle {
+    @apply text-center;
   }
 
-  .navLink{
+  .navLink {
     @apply flex flex-col items-center text-sm text-textColor font-medium hover:text-titleColorDark transition-[0.3s];
   }
 
-  .navIcon{
-    @apply block text-xl md:hidden
+  .navIcon {
+    @apply block text-xl md:hidden;
   }
 
-  .socialIcon{
-    @apply text-xl hover:text-titleColorDark
+  .socialIcon {
+    @apply text-xl hover:text-titleColorDark;
   }
 
   .aboutBox {
-    @apply bg-containerColor border-[1px] border-solid border-[rgba(0,0,0,0.1)] rounded-xl text-center px-2 py-3 lg:px-5 lg:py-4
+    @apply bg-containerColor border-[1px] border-solid border-[rgba(0,0,0,0.1)] rounded-xl text-center px-2 py-3 lg:px-5 lg:py-4;
   }
 
   .aboutIcon {
-    @apply text-h1 text-titleColor mb-2
+    @apply text-h1 text-titleColor mb-2;
   }
 
   .aboutTitle {
-    @apply text-sm font-medium
+    @apply text-sm font-medium;
   }
 
   .aboutSubtitle {
-    @apply text-xs 
+    @apply text-xs;
   }
 
   .skillsContent {
-    @apply bg-containerColor border-[1px] border-solid border-[rgba(0,0,0,0.1)] p-6 sm:py-8 sm:px-16 rounded-3xl
+    @apply bg-containerColor border-[1px] border-solid border-[rgba(0,0,0,0.1)] p-6 sm:py-8 sm:px-16 rounded-3xl;
   }
 
   .skillsTitle {
-    @apply text-base font-medium text-center mb-6
+    @apply text-base font-medium text-center mb-6;
   }
 
   .skillsBox {
-    @apply flex justify-center gap-x-5 min-[350px]:gap-x-10
+    @apply flex justify-center gap-x-5 min-[350px]:gap-x-10;
   }
 
   .skillsGroup {
-    @apply grid items-start gap-y-4
+    @apply grid items-start gap-y-4;
   }
 
-  .skillsData{
-    @apply flex gap-x-2
+  .skillsData {
+    @apply flex gap-x-2;
   }
 
   .skillsIcon {
-    @apply text-base text-titleColor
+    @apply text-base text-titleColor;
   }
 
   .skillsName {
-    @apply text-sm min-[350px]:text-base font-medium 
+    @apply text-sm min-[350px]:text-base font-medium;
   }
 
   .skillsLevel {
-    @apply text-xs
+    @apply text-xs;
   }
 
   .qualificationButton {
-    @apply text-h3 font-medium text-textColor my-0 mx-3 sm:mx-4 cursor-pointer hover:text-titleColorDark
+    @apply text-h3 font-medium text-textColor my-0 mx-3 sm:mx-4 cursor-pointer hover:text-titleColorDark;
   }
 
   .qualificationIcon {
-    @apply text-3xl mr-1
+    @apply text-3xl mr-1;
   }
 
   .qualificationActive {
-    @apply text-titleColorDark
+    @apply text-titleColorDark;
   }
 
   .qualificationContent {
-    @apply hidden
+    @apply hidden;
   }
 
   .qualificationContentActive {
-    @apply block
+    @apply block;
   }
 
   .qualificationData {
-    @apply grid grid-cols-[1fr_max-content_1fr] gap-2 sm:gap-x-6 sm:gap-y-0
+    @apply grid grid-cols-[1fr_max-content_1fr] gap-2 sm:gap-x-6 sm:gap-y-0;
   }
 
   .qualificationTitle {
-    @apply text-base font-medium 
+    @apply text-base font-medium;
   }
 
   .qualificationSubtitle {
-    @apply inline-block text-sm mb-4
+    @apply inline-block text-sm mb-4;
   }
 
   .qualificationCalendar {
-    @apply text-sm
+    @apply text-sm;
   }
 
   .qualificationRounder {
-    @apply inline-block w-3 h-3 bg-textColor rounded-full
+    @apply inline-block w-3 h-3 bg-textColor rounded-full;
   }
 
   .qualificationLine {
-    @apply block w-[1px] h-full bg-textColor translate-x-[6px] -translate-y-[7px]
+    @apply block w-[1px] h-full bg-textColor translate-x-[6px] -translate-y-[7px];
   }
 
   .projectItem {
-    @apply text-titleColor py-1 px-3 font-medium rounded-lg capitalize cursor-pointer hover:bg-titleColor hover:text-containerColor
+    @apply text-titleColor py-1 px-3 font-medium rounded-lg capitalize cursor-pointer hover:bg-titleColor hover:text-containerColor;
   }
 
   .contactFormInput {
-    @apply outline-none border-none rounded-lg w-full text-base p-4 bg-bodyColor
+    @apply outline-none border-none rounded-lg w-full text-base p-4 bg-bodyColor;
   }
 
   .footerLink {
-    @apply 	text-titleColor hover:text-titleColorDark
+    @apply text-titleColor hover:text-titleColorDark;
   }
 
   .footerSocialIcon {
-    @apply bg-titleColor text-containerColor text-lg p-2 rounded-full inline-flex justify-center items-center hover:bg-titleColorDark
+    @apply bg-titleColor text-containerColor text-lg p-2 rounded-full inline-flex justify-center items-center hover:bg-titleColorDark;
   }
 
   /*=============== LAYOUT ===============*/
-  .sectionContainer{
-    @apply mx-4 md:mx-6 lg:max-w-5xl lg:mx-auto w-auto
+  .sectionContainer {
+    @apply mx-4 md:mx-6 lg:max-w-5xl lg:mx-auto w-auto;
   }
 
-  .gridContainer{
-    @apply grid gap-6
+  .gridContainer {
+    @apply grid gap-6;
   }
 
   /*=============== BUTTONS ===============*/
-  .button{
-    @apply bg-titleColor rounded-2xl inline-block font-medium py-5 px-8 text-white hover:bg-titleColorDark md:py-4 md:px-7 font-poppins cursor-pointer
+  .button {
+    @apply bg-titleColor rounded-2xl inline-block font-medium py-5 px-8 text-white hover:bg-titleColorDark md:py-4 md:px-7 font-poppins cursor-pointer;
   }
 
-  .buttonIcon{
-    @apply ml-2 md:w-[22px] md:h-[22px]
+  .buttonIcon {
+    @apply ml-2 md:w-[22px] md:h-[22px];
   }
 
-  .buttonFlex{
-    @apply inline-flex items-center justify-center
+  .buttonFlex {
+    @apply inline-flex items-center justify-center;
   }
 
   @media screen and (max-width: 768px) {
-    .navMenu{
+    .navMenu {
       @apply fixed bottom-[-100%] left-0 w-full bg-bodyColor pt-8 px-1 sm:px-6 pb-16 shadow-[0_-1px_4px_rgba(0,0,0,0.15)] rounded-t-3xl rounded-r-3xl;
       transition: 0.5s;
       behavior: smooth;
