@@ -6,17 +6,17 @@ export default {
     {
       name: 'title',
       title: 'Title',
-      description: "Title of the project",
+      description: 'Title of the project',
       type: 'string',
-    }, 
+    },
     {
       name: 'image',
       title: 'Image',
       type: 'image',
       options: {
         hotspot: true,
-      }
-    }, 
+      },
+    },
     {
       name: 'summary',
       title: 'Summary',
@@ -25,29 +25,24 @@ export default {
     {
       name: 'linkToBuild',
       title: 'LinkToBuild',
-      type: 'url'
+      type: 'url',
     },
     {
       name: 'linkToGithub',
       title: 'LinkToGithub',
-      type: 'url'
+      type: 'url',
     },
     {
       name: 'tags',
       title: 'Tags',
-      type:'array',
-      of: [{type: 'reference', to: [
-        {type: "projectCategory"}
-      ]}]
+      type: 'array',
+      of: [{type: 'reference', to: [{type: 'projectCategory'}]}],
     },
     {
-      name:'technologies',
+      name: 'technologies',
       title: 'Technologies',
       type: 'array',
-      of: [{ type: 'reference', to: [
-        {type: "frontendSkill"},
-        {type: "backendSkill"}
-      ]}]
-    }
-  ]
+      of: [{type: 'reference', to: [{type: 'frontendSkill'}, {type: 'backendSkill'}]}],
+    },
+  ],
 }

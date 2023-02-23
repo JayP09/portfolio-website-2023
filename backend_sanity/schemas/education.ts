@@ -7,12 +7,12 @@ export default {
       name: 'name',
       title: 'Name',
       type: 'string',
-    }, 
+    },
     {
       name: 'universityName',
       title: 'university Name',
       type: 'string',
-    }, 
+    },
     {
       name: 'percentage',
       title: 'Percentage',
@@ -23,7 +23,7 @@ export default {
       title: 'Year Started',
       type: 'date',
       options: {
-        dateformat: 'YYYY-MM-DD'
+        dateformat: 'YYYY-MM-DD',
       },
     },
     {
@@ -31,8 +31,8 @@ export default {
       title: 'Year Ended',
       type: 'date',
       options: {
-        dateformat: 'YYYY'
-      }
+        dateformat: 'YYYY',
+      },
     },
-  ]
+  ],
 }

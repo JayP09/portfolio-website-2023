@@ -7,43 +7,48 @@ export default {
       name: 'name',
       title: 'Name',
       type: 'string',
-    }, 
+    },
     {
       name: 'role',
       title: 'Role',
       type: 'string',
-    }, 
+    },
     {
       name: 'heroImage',
       title: 'Image',
       type: 'image',
       options: {
         hotspot: true,
-      }
+      },
     },
     {
       name: 'backgroundInformation',
-      title: "BackgroundInformation",
-      type: 'string'
+      title: 'BackgroundInformation',
+      type: 'string',
     },
     {
-      name: "profilePic",
-      title: "ProfilePic",
+      name: 'calendlyUrl',
+      title: 'calendly Url',
+      type: 'url',
+    },
+    {
+      name: 'profilePic',
+      title: 'ProfilePic',
       type: 'image',
       options: {
         hotspot: true,
-      }
+      },
     },
     {
       name: 'email',
       title: 'Email',
-      type: 'email'
+      type: 'email',
     },
     {
       name: 'socials',
       title: 'Socials',
       type: 'array',
-      of: [{type: 'reference', to: {type: "social"}}]
-    }
-  ]
+      of: [{type: 'reference', to: {type: 'social'}}],
+    },
+  ],
 }

@@ -1,12 +1,12 @@
 export default {
-  name: "projectCategory",
+  name: 'projectCategory',
   title: 'ProjectCategory',
   type: 'document',
-  fields:[
+  fields: [
     {
-      name:'tag',
-      title:'Tag',
-      type:'string',
-    }
+      name: 'tag',
+      title: 'Tag',
+      type: 'string',
+    },
   ],
 }

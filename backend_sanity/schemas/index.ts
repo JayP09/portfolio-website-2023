@@ -1,11 +1,11 @@
-import pageInfo from "./pageInfo"
-import frontendSkill from "./frontendSkill"
-import backendSkill from "./backendSkill"
-import education from "./education"
-import experience from "./experience"
-import project from "./project"
-import social from "./social"
-import projectcategory from "./projectCategory"
+import pageInfo from './pageInfo'
+import frontendSkill from './frontendSkill'
+import backendSkill from './backendSkill'
+import education from './education'
+import experience from './experience'
+import project from './project'
+import social from './social'
+import projectcategory from './projectCategory'
 
 export const schemaTypes = [
   pageInfo,
@@ -15,5 +15,5 @@ export const schemaTypes = [
   experience,
   project,
   social,
-  projectcategory
+  projectcategory,
 ]
