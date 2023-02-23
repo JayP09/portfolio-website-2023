@@ -1,8 +1,11 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
+import { useAppContext } from '@/context/context'
+import { changeDateFormat, getYearFromDate } from '@/utils/extraUtils'
 
 const Qualification = () => {
   const [toggleState, setToggleState] = useState(1)
+  const { education, experience } = useAppContext()
 
   const toggleTab = (index) => {
     setToggleState(index)
@@ -61,13 +64,16 @@ const Qualification = () => {
           >
             <div className="qualificationData">
               <div>
-                <h3 className="qualificationTitle">Bachelor of Engineering</h3>
+                <h3 className="qualificationTitle">{education[0].name}</h3>
                 <span className="qualificationSubtitle mb-0">
-                  University of mumbai
+                  {education[0].universityName}
                 </span>
-                <span className="qualificationSubtitle">CGPA - 8.81</span>
+                <span className="qualificationSubtitle">{`Percentage - ${education[0].percentage}%`}</span>
                 <div className="qualificationcalendar">
-                  <i className="bx bxs-calendar-alt"></i> 2018-2022
+                  <i className="bx bxs-calendar-alt"></i>{' '}
+                  {`${getYearFromDate(
+                    education[0].yearStarted
+                  )} - ${getYearFromDate(education[0].yearEnded)}`}
                 </div>
               </div>
               <div>
@@ -83,30 +89,35 @@ const Qualification = () => {
               </div>
 
               <div>
-                <h3 className="qualificationTitle">12th</h3>
+                <h3 className="qualificationTitle">{education[1].name}</h3>
                 <span className="qualificationSubtitle mb-0">
-                  Maharashtra - India
+                  {education[1].universityName}
                 </span>
                 <span className="qualificationSubtitle">
-                  Percentage - 64.15%
+                  {`Percentage - ${education[1].percentage}%`}
                 </span>
                 <div className="qualificationcalendar">
-                  <i className="bx bxs-calendar-alt"></i> 2017 - 2018
+                  <i className="bx bxs-calendar-alt"></i>{' '}
+                  {`${getYearFromDate(
+                    education[1].yearStarted
+                  )} - ${getYearFromDate(education[1].yearEnded)}`}
                 </div>
               </div>
             </div>
-
             <div className="qualificationData">
               <div>
-                <h3 className="qualificationTitle">10th Class</h3>
+                <h3 className="qualificationTitle">{education[2].name}</h3>
                 <span className="qualificationSubtitle mb-0">
-                  Maharashtra - India
+                  {education[2].universityName}
                 </span>
                 <span className="qualificationSubtitle">
-                  Percentage - 86.80%
+                  {`Percentage - ${education[2].percentage}%`}
                 </span>
                 <div className="qualificationcalendar">
-                  <i className="bx bxs-calendar-alt"></i> 2015 - 2016
+                  <i className="bx bxs-calendar-alt"></i>{' '}
+                  {`${getYearFromDate(
+                    education[2].yearStarted
+                  )} - ${getYearFromDate(education[2].yearEnded)}`}
                 </div>
               </div>
               <div>
@@ -128,10 +139,15 @@ const Qualification = () => {
           >
             <div className="qualificationData">
               <div>
-                <h3 className="qualificationTitle">Full-Stack Developer</h3>
-                <span className="qualificationSubtitle">Dustecosystem</span>
+                <h3 className="qualificationTitle">{experience[0].jobTitle}</h3>
+                <span className="qualificationSubtitle">
+                  {experience[0].companyName}
+                </span>
                 <div className="qualificationcalendar">
-                  <i className="bx bxs-calendar-alt"></i> 08/2022 - 10/2022
+                  <i className="bx bxs-calendar-alt"></i>{' '}
+                  {`${changeDateFormat(
+                    experience[0].dateStarted
+                  )} - ${changeDateFormat(experience[0].dateEnded)}`}
                 </div>
               </div>
               <div>
@@ -147,10 +163,15 @@ const Qualification = () => {
               </div>
 
               <div>
-                <h3 className="qualificationTitle">Full-stack developer</h3>
-                <span className="qualificationSubtitle">Startup</span>
+                <h3 className="qualificationTitle">{experience[1].jobTitle}</h3>
+                <span className="qualificationSubtitle">
+                  {experience[1].companyName}
+                </span>
                 <div className="qualificationcalendar">
-                  <i className="bx bxs-calendar-alt"></i> 03/2021 - 05/2021
+                  <i className="bx bxs-calendar-alt"></i>{' '}
+                  {`${changeDateFormat(
+                    experience[1].dateStarted
+                  )} - ${changeDateFormat(experience[1].dateEnded)}`}
                 </div>
               </div>
             </div>

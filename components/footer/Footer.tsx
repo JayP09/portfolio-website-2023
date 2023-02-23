@@ -1,6 +1,10 @@
+import { useAppContext } from '@/context/context'
+import { getFooterSocialIcon } from '@/utils/extraUtils'
 import React from 'react'
 
 const Footer = () => {
+  const { socials } = useAppContext()
+
   return (
     <footer className="footer bg-containerColor border-t-[1px] border-solid border-[rgba(0,0,0,0.1)]">
       <div className="footerContainer pt-8 pb-24 sectionContainer">
@@ -25,30 +29,17 @@ const Footer = () => {
           </li>
         </ul>
         <div className="footerSocial flex justify-center gap-x-5">
-          <a
-            href="https://github.com/JayP09"
-            className="footerSocialIcon"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <i className="bx bxl-github"></i>
-          </a>
-          <a
-            href="https://twitter.com/JayPTwts"
-            className="footerSocialIcon"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <i className="bx bxl-twitter"></i>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/jaypanchal09/"
-            className="footerSocialIcon"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <i className="bx bxl-linkedin-square"></i>
-          </a>
+          {socials.map((social) => (
+            <a
+              href="https://github.com/JayP09"
+              className="footerSocialIcon"
+              target="_blank"
+              rel="noreferrer"
+              key={social._id}
+            >
+              {getFooterSocialIcon(social.title)}
+            </a>
+          ))}
         </div>
         <span className="footerCopy block mt-16 text-titleColor text-center text-sm">
           &#169;2023. Made by Jay Panchal

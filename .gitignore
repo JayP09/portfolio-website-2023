@@ -14,7 +14,10 @@
 /.next/
 /out/
 
+# backend_sanity
 backend_sanity/node_modules
+backend_sanity/.sanity/
+backend_sanity/dist/
 
 # production
 /build

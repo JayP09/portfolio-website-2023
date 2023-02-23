@@ -3,13 +3,16 @@ import Image from 'next/image'
 import { Cursor, useTypewriter } from 'react-simple-typewriter'
 import { motion } from 'framer-motion'
 import SendIcon from '../../public/send.svg'
+import { useAppContext } from '@/context/context'
 
 const Data = () => {
-  const [text, count] = useTypewriter({
-    words: ['Guy-who-loves-Chai.JS', '<ButLovesToCodeMore />'],
+  const [text] = useTypewriter({
+    words: ['Guy-who-loves-Chai', '<ButLovesToCodeMore />'],
     loop: true,
     delaySpeed: 2000,
   })
+
+  const { pageInfo } = useAppContext()
 
   return (
     <motion.div
@@ -23,13 +26,13 @@ const Data = () => {
       }}
       transition={{
         duration: 1,
-        delay: 2.25
+        delay: 2.25,
       }}
       viewport={{ once: true }}
       className="col-[1/3] md:col-auto"
     >
       <h1 className="flex items-center max-[576px]:text-4xl text-big mb-1">
-        Jay Panchal
+        {pageInfo.name}
         <span className="ml-[1px]">
           <svg
             viewBox="0 0 48 48"
@@ -81,7 +84,7 @@ const Data = () => {
         </span>
       </h1>
       <h3 className="relative pl-14 lg:pl-20 font-normal mb-4 text-h3 before:content-[''] before:absolute before:w-10 lg:before:w-[70px] before:h-[1px] before:bg-textColor before:left-0 before:top-3 lg:before:top-4">
-        Software Engineer
+        {pageInfo.role}
       </h3>
       <p className="mb-10 max-w-sm lg:mb-12">
         <span className="mr-2">{text}</span>

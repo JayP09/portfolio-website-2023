@@ -83,7 +83,7 @@
   }
 
   .skillsContent {
-    @apply bg-containerColor border-[1px] border-solid border-[rgba(0,0,0,0.1)] p-6 sm:py-8 sm:px-16 rounded-3xl;
+    @apply bg-containerColor border-[1px] border-solid border-[rgba(0,0,0,0.1)] p-6 sm:py-8 rounded-3xl;
   }
 
   .skillsTitle {
@@ -95,7 +95,7 @@
   }
 
   .skillsGroup {
-    @apply grid items-start gap-y-4;
+    @apply grid grid-cols-2 items-start gap-y-4 gap-x-4;
   }
 
   .skillsData {

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 
-const LoadingScreen = ({ showLoading, setShowLoading }) => {
+const LoadingScreen = ({ setShowLoading }) => {
   const [loadingIndex, setLoadingIndex] = useState(0)
   const hellos = [
     'નમસ્તે',
@@ -30,7 +30,7 @@ const LoadingScreen = ({ showLoading, setShowLoading }) => {
 
   return (
     <div className="bg-titleColor flex justify-center items-center h-screen absolute top-0 left-0 w-full">
-      <h1 className="font-poppins text-containerColor text-4xl">
+      <h1 className="font-poppins text-containerColor text-big">
         {hellos[loadingIndex]}
         <span>👋</span>
       </h1>

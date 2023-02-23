@@ -2,8 +2,11 @@ import Image from 'next/image'
 import { motion } from 'framer-motion'
 import Info from './Info'
 import Profilepic from '../../public/profilepic.jpg'
+import { useAppContext } from '@/context/context'
+import { UrlFor } from '@/sanity'
 
 const About = () => {
+  const { pageInfo } = useAppContext()
   return (
     <section className="section" id="about">
       <motion.div
@@ -24,7 +27,9 @@ const About = () => {
           className="justify-self-center"
         >
           <Image
-            src={Profilepic}
+            src={UrlFor(pageInfo.profilePic).url()}
+            width={350}
+            height={350}
             className="w-56 lg:w-[350px] justify-self-center rounded-3xl"
             alt="Profile Pic"
           />
@@ -40,13 +45,7 @@ const About = () => {
           <Info />
           <div className="flex justify-center max-w-md items-center mx-auto">
             <p className="p-0 sm:p-2 lg:pl-0 lg:py-0 lg:pr-16 mb-8 lg:mb-10">
-              I am a Software Engineer with six months of experience in HTML,
-              CSS, JavaScript, React, and Next.js. With a degree in Computer
-              Science and a passion for web development, I have gained valuable
-              experience building responsive websites using modern technologies.
-              I am a fast learner and always looking for opportunities to
-              improve my skills and stay up-to-date with the latest developments
-              in the field.
+              {pageInfo.backgroundInformation}
             </p>
           </div>
 

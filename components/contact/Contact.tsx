@@ -3,9 +3,12 @@ import Image from 'next/image'
 import emailjs from '@emailjs/browser'
 import { motion } from 'framer-motion'
 import SendIcon from '../../public/send.svg'
+import { useAppContext } from '@/context/context'
 
 const Contact = () => {
   const form = useRef()
+
+  const { pageInfo } = useAppContext()
 
   const sendEmail = (e) => {
     e.preventDefault()
@@ -59,7 +62,7 @@ const Contact = () => {
             <div className="flex flex-col gap-3">
               <span className="text-sm mb-0">want to call me?</span>
               <a
-                href="https://calendly.com/jayp09/30min"
+                href={pageInfo.calendlyUrl}
                 className="text-xl hover:underline hover:text-titleColorDark"
                 target="_blank"
                 rel="noreferrer"
@@ -75,7 +78,7 @@ const Contact = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                panchalj272@gmail.com
+                {pageInfo.email}
               </a>
             </div>
           </div>
