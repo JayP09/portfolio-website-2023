@@ -7,15 +7,15 @@ interface SanityBody {
 }
 
 interface Image {
-  _type: "image"
+  _type: 'image'
   asset: {
-    _ref: string;
-    _type: "reference"
+    _ref: string
+    _type: 'reference'
   }
 }
 
 export interface PageInfo extends SanityBody {
-  _type: "pageInfo"
+  _type: 'pageInfo'
   title: string
   backgroundInformation: string
   email: string
@@ -24,10 +24,11 @@ export interface PageInfo extends SanityBody {
   profilePic: Image
   role: string
   socials: Social[]
+  calendlyUrl: string
 }
 
 export interface Education extends SanityBody {
-  _type: "education"
+  _type: 'education'
   title: string
   name: string
   percentage: number
@@ -37,7 +38,7 @@ export interface Education extends SanityBody {
 }
 
 export interface Experience extends SanityBody {
-  _type: "education"
+  _type: 'education'
   jobTitle: string
   companyName: string
   dateStarted: Date
@@ -45,37 +46,36 @@ export interface Experience extends SanityBody {
 }
 
 export interface ProjectCategory extends SanityBody {
-  _type: "projectCategory"
+  _type: 'projectCategory'
   title: string
   tag: string
 }
 
 export interface Project extends SanityBody {
-  _type: "project"
+  _type: 'project'
   title: string
   image: Image
   linkToBuild: string
   linkToGithub: string
   summary: string
   tags: projectCategory
-  technologies: (FrontendSkills|backendSkills)[]
+  technologies: (FrontendSkills | backendSkills)[]
 }
 
 export interface FrontendSkill extends SanityBody {
-  _type: "frontendSkill"
+  _type: 'frontendSkill'
   title: string
   skillLevel: string
- 
 }
 
 export interface BackendSkill extends SanityBody {
-  _type: "backendSkill"
+  _type: 'backendSkill'
   title: string
   skillLevel: string
 }
 
 export interface Social extends SanityBody {
-  _type: "social";
-  title: string;
-  url: string;
+  _type: 'social'
+  title: string
+  url: string
 }
