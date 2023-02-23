@@ -55,8 +55,8 @@ export default {
       title: 'Resume File',
       type: 'file',
       options: {
-        accept: 'application/pdf'
-      }
-    }
+        accept: 'application/pdf',
+      },
+    },
   ],
 }

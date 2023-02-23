@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import Info from './Info'
-import Profilepic from '../../public/profilepic.jpg'
 import { useAppContext } from '@/context/context'
 import { UrlFor } from '@/sanity'
 

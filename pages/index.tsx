@@ -70,9 +70,7 @@ export default function Home({
     >
       <div className="font-poppins text-base">
         <div className={showLoading ? 'flex' : 'hidden'}>
-          <LoadingScreen
-            setShowLoading={setShowLoading}
-          />
+          <LoadingScreen setShowLoading={setShowLoading} />
         </div>
         <main
           className={`${

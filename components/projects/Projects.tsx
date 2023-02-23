@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { projectsData, projectNav } from './Data'
 import ProjectsItems from './ProjectItems'
 import { useAppContext } from '@/context/context'
 
