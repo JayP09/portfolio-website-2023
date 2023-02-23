@@ -14,6 +14,14 @@ interface Image {
   }
 }
 
+interface PDF {
+  _type: 'file'
+  asset: {
+    _ref: string
+    _type: 'reference'
+  }
+}
+
 export interface PageInfo extends SanityBody {
   _type: 'pageInfo'
   title: string
@@ -25,6 +33,8 @@ export interface PageInfo extends SanityBody {
   role: string
   socials: Social[]
   calendlyUrl: string
+  resume: PDF
+  resumeURL: string
 }
 
 export interface Education extends SanityBody {

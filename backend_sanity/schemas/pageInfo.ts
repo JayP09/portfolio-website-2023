@@ -50,5 +50,13 @@ export default {
       type: 'array',
       of: [{type: 'reference', to: {type: 'social'}}],
     },
+    {
+      name: 'resume',
+      title: 'Resume File',
+      type: 'file',
+      options: {
+        accept: 'application/pdf'
+      }
+    }
   ],
 }
