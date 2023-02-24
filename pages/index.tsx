@@ -10,14 +10,14 @@ import ScrollUp from '../components/scrollup/ScrollUp'
 import React, { useState } from 'react'
 import LoadingScreen from '../components/loadingscreen/LoadingScreen'
 import {
-  BackendSkill,
-  Education,
-  Experience,
-  FrontendSkill,
-  PageInfo,
-  ProjectCategory,
-  Project as ProjectInterface,
-  Social,
+  FrontendSkillType,
+  BackendSkillType,
+  PageInfoType,
+  EducationType,
+  ExperienceType,
+  ProjectType,
+  ProjectCategoryType,
+  SocialType,
 } from '@/types'
 import { GetStaticProps } from 'next'
 import {
@@ -33,14 +33,14 @@ import {
 import { AppContext } from '@/context/context'
 
 type Props = {
-  pageInfo: PageInfo
-  education: Education[]
-  experience: Experience[]
-  frontendSkills: FrontendSkill[]
-  backendSkills: BackendSkill[]
-  projectsData: ProjectInterface[]
-  projectCategory: ProjectCategory[]
-  socials: Social[]
+  pageInfo: PageInfoType
+  education: EducationType[]
+  experience: ExperienceType[]
+  frontendSkills: FrontendSkillType[]
+  backendSkills: BackendSkillType[]
+  projectsData: ProjectType[]
+  projectCategory: ProjectCategoryType[]
+  socials: SocialType[]
 }
 
 export default function Home({
@@ -108,14 +108,14 @@ export default function Home({
 }
 
 export const getStaticProps: GetStaticProps<Props> = async () => {
-  const pageInfo: PageInfo = await fetchPageInfo()
-  const education: Education[] = await fetchEducation()
-  const experience: Experience[] = await fetchExperience()
-  const frontendSkills: FrontendSkill[] = await fetchFrontendSkills()
-  const backendSkills: BackendSkill[] = await fetchBackendSkills()
-  const projectsData: ProjectInterface[] = await fetchProjectsData()
-  const projectCategory: ProjectCategory[] = await fetchProjectCategory()
-  const socials: Social[] = await fetchSocial()
+  const education: EducationType[] = await fetchEducation()
+  const experience: ExperienceType[] = await fetchExperience()
+  const frontendSkills: FrontendSkillType[] = await fetchFrontendSkills()
+  const backendSkills: BackendSkillType[] = await fetchBackendSkills()
+  const projectsData: ProjectType[] = await fetchProjectsData()
+  const projectCategory: ProjectCategoryType[] = await fetchProjectCategory()
+  const socials: SocialType[] = await fetchSocial()
+  const pageInfo: PageInfoType = await fetchPageInfo()
 
   return {
     props: {

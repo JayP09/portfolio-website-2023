@@ -1,24 +1,24 @@
 import { createContext, useContext } from 'react'
 import {
-  BackendSkill,
-  Education,
-  Experience,
-  FrontendSkill,
-  PageInfo,
-  ProjectCategory,
-  Project as ProjectInterface,
-  Social,
+  FrontendSkillType,
+  BackendSkillType,
+  PageInfoType,
+  EducationType,
+  ExperienceType,
+  ProjectType,
+  ProjectCategoryType,
+  SocialType,
 } from '@/types'
 
 type AppContext = {
-  pageInfo: PageInfo
-  education: Education[]
-  experience: Experience[]
-  frontendSkills: FrontendSkill[]
-  backendSkills: BackendSkill[]
-  projectsData: ProjectInterface[]
-  projectCategory: ProjectCategory[]
-  socials: Social[]
+  pageInfo: PageInfoType
+  education: EducationType[]
+  experience: ExperienceType[]
+  frontendSkills: FrontendSkillType[]
+  backendSkills: BackendSkillType[]
+  projectsData: ProjectType[]
+  projectCategory: ProjectCategoryType[]
+  socials: SocialType[]
 }
 
 export const AppContext = createContext<AppContext | null>(null)

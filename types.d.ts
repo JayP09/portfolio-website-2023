@@ -6,7 +6,7 @@ interface SanityBody {
   _updatedAt: string
 }
 
-interface Image {
+interface ImageType {
   _type: 'image'
   asset: {
     _ref: string
@@ -14,7 +14,7 @@ interface Image {
   }
 }
 
-interface PDF {
+interface PDFType {
   _type: 'file'
   asset: {
     _ref: string
@@ -22,7 +22,7 @@ interface PDF {
   }
 }
 
-export interface PageInfo extends SanityBody {
+export interface PageInfoType extends SanityBody {
   _type: 'pageInfo'
   title: string
   backgroundInformation: string
@@ -37,7 +37,7 @@ export interface PageInfo extends SanityBody {
   resumeURL: string
 }
 
-export interface Education extends SanityBody {
+export interface EducationType extends SanityBody {
   _type: 'education'
   title: string
   name: string
@@ -47,7 +47,7 @@ export interface Education extends SanityBody {
   yearEnded: Date
 }
 
-export interface Experience extends SanityBody {
+export interface ExperienceType extends SanityBody {
   _type: 'education'
   jobTitle: string
   companyName: string
@@ -55,13 +55,13 @@ export interface Experience extends SanityBody {
   dateEnded: Date
 }
 
-export interface ProjectCategory extends SanityBody {
+export interface ProjectCategoryType extends SanityBody {
   _type: 'projectCategory'
   title: string
   tag: string
 }
 
-export interface Project extends SanityBody {
+export interface ProjectType extends SanityBody {
   _type: 'project'
   title: string
   image: Image
@@ -72,19 +72,19 @@ export interface Project extends SanityBody {
   technologies: (FrontendSkills | backendSkills)[]
 }
 
-export interface FrontendSkill extends SanityBody {
+export interface FrontendSkillType extends SanityBody {
   _type: 'frontendSkill'
   title: string
   skillLevel: string
 }
 
-export interface BackendSkill extends SanityBody {
+export interface BackendSkillType extends SanityBody {
   _type: 'backendSkill'
   title: string
   skillLevel: string
 }
 
-export interface Social extends SanityBody {
+export interface SocialType extends SanityBody {
   _type: 'social'
   title: string
   url: string
