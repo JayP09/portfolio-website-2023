@@ -1,12 +1,17 @@
 import { BackendSkillType } from '@/types'
+import { groq } from 'next-sanity'
 
 export const fetchBackendSkills = async () => {
-  const res = await fetch(
-    `${process.env.NEXT_PUBLIC_BASE_URL}/api/getBackendSkills`
-  )
+  const query = groq`*[_type == "backendSkill"] {
+    _id,
+    _type,
+    title,
+    skillLevel
+  }`
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API}${query}`)
 
   const data = await res.json()
-  const backendSkills: BackendSkillType[] = data.backendSkills
+  const backendSkills: BackendSkillType[] = data.result
 
   return backendSkills
 }
