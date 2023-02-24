@@ -26,7 +26,7 @@ const About = () => {
           className="justify-self-center"
         >
           <Image
-            src={UrlFor(pageInfo.profilePic).url()}
+            src={pageInfo.profilePicURL}
             width={350}
             height={350}
             className="w-56 lg:w-[350px] justify-self-center rounded-3xl"

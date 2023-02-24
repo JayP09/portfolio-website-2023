@@ -20,17 +20,15 @@ import {
   SocialType,
 } from '@/types'
 import { GetStaticProps } from 'next'
-import {
-  fetchBackendSkills,
-  fetchEducation,
-  fetchExperience,
-  fetchFrontendSkills,
-  fetchPageInfo,
-  fetchProjectCategory,
-  fetchProjectsData,
-  fetchSocial,
-} from '@/utils/fetchData'
 import { AppContext } from '@/context/context'
+import { fetchEducation } from '@/utils/fetchEducation'
+import { fetchExperience } from '@/utils/fetchExperience'
+import { fetchFrontendSkills } from '@/utils/fetchFrontendSkills'
+import { fetchBackendSkills } from '@/utils/fetchBackendSkills'
+import { fetchProjectsData } from '@/utils/fetchProjectsData'
+import { fetchProjectCategory } from '@/utils/fetchProjectCategory'
+import { fetchSocial } from '@/utils/fetchSocial'
+import { fetchPageInfo } from '@/utils/fetchPageInfo'
 
 type Props = {
   pageInfo: PageInfoType

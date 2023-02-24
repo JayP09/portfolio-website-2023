@@ -4,7 +4,17 @@ import { groq } from 'next-sanity'
 import { sanityClient } from '../../sanity'
 import { PageInfoType } from '@/types'
 
-const query = groq`*[_type == "pageInfo"][0] {...,"resumeURL": resume.asset -> url}`
+const query = groq`*[_type == "pageInfo"] [0] {
+  _id,
+  _type,
+  name,
+  backgroundInformation,
+  calendlyUrl,
+  email,
+  role,
+  "resumeURL": resume.asset -> url,
+  "profilePicURL": profilePic.asset -> url
+}`
 
 type Data = {
   pageInfo: PageInfoType

@@ -12,7 +12,7 @@ const ProjectItems = ({ project }) => {
     >
       <div className="w-72 h-48 mb-3 lg:mb-4 flex justify-center items-center relative">
         <Image
-          src={UrlFor(project.image).url()}
+          src={project.projectImage}
           alt={project.title}
           width={288}
           height={192}

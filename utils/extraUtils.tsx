@@ -30,10 +30,10 @@ export const getHomeSocialIcon = (type: string) => {
   }
 }
 
-export const getYearFromDate = (date: Date) => {
-  return date.toString().slice(0, 4)
+export const getYearFromDate = (date: string) => {
+  return date.slice(0, 4)
 }
 
-export const changeDateFormat = (date: Date) => {
+export const changeDateFormat = (date: string) => {
   return date.toString().split('-').reverse().join('/').slice(3)
 }

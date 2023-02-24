@@ -4,7 +4,12 @@ import { groq } from 'next-sanity'
 import { sanityClient } from '../../sanity'
 import { FrontendSkillType } from '@/types'
 
-const query = groq`*[_type == "frontendSkill"]`
+const query = groq`*[_type == "frontendSkill"] {
+  _id,
+  _type,
+  title,
+  skillLevel
+}`
 
 type Data = {
   frontendSkills: FrontendSkillType[]

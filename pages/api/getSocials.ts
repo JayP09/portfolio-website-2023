@@ -4,7 +4,12 @@ import { groq } from 'next-sanity'
 import { sanityClient } from '../../sanity'
 import { SocialType } from '@/types'
 
-const query = groq`*[_type == "social"]`
+const query = groq`*[_type == "social"] {
+  _id,
+  _type,
+  title,
+  url
+}`
 
 type Data = {
   socials: SocialType[]

@@ -4,7 +4,15 @@ import { groq } from 'next-sanity'
 import { sanityClient } from '../../sanity'
 import { EducationType } from '@/types'
 
-const query = groq`*[_type == "education"]`
+const query = groq`*[_type == "education"] {
+  _id,
+  _type,
+  name,
+  percentage,
+  universityName,
+  yearStarted,
+  yearEnded,
+}`
 
 type Data = {
   education: EducationType[]

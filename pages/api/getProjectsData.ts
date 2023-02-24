@@ -4,7 +4,16 @@ import { groq } from 'next-sanity'
 import { sanityClient } from '../../sanity'
 import { ProjectType } from '@/types'
 
-const query = groq`*[_type == "project"] | order( _updatedAt desc) {...,tags[] ->,technologies[] ->}`
+const query = groq`*[_type == "project"] | order( _updatedAt desc) {
+  _id,
+  _type,
+  title,
+  "projectImage": image.asset -> url,
+  summary,
+  linkToBuild,
+  linkToGithub,
+  tags[] ->,
+}`
 
 type Data = {
   projectsData: ProjectType[]

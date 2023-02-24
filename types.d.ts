@@ -1,90 +1,67 @@
-// All of the sanity Response tend to have the below sanity body type
-interface SanityBody {
-  _createdAt: string
+export interface PageInfoType {
   _id: string
-  _rev: string
-  _updatedAt: string
-}
-
-interface ImageType {
-  _type: 'image'
-  asset: {
-    _ref: string
-    _type: 'reference'
-  }
-}
-
-interface PDFType {
-  _type: 'file'
-  asset: {
-    _ref: string
-    _type: 'reference'
-  }
-}
-
-export interface PageInfoType extends SanityBody {
   _type: 'pageInfo'
-  title: string
   backgroundInformation: string
-  email: string
-  heroImage: Image
-  name: string
-  profilePic: Image
-  role: string
-  socials: Social[]
   calendlyUrl: string
-  resume: PDF
+  email: string
+  name: string
+  profilePicURL: string
   resumeURL: string
+  role: string
 }
 
-export interface EducationType extends SanityBody {
+export interface EducationType {
+  _id: string
   _type: 'education'
-  title: string
   name: string
   percentage: number
   universityName: string
-  yearStarted: Date
-  yearEnded: Date
+  yearStarted: string
+  yearEnded: string
 }
 
-export interface ExperienceType extends SanityBody {
+export interface ExperienceType {
+  _id: string
   _type: 'education'
   jobTitle: string
   companyName: string
-  dateStarted: Date
-  dateEnded: Date
+  dateStarted: string
+  dateEnded: string
 }
 
-export interface ProjectCategoryType extends SanityBody {
+export interface ProjectCategoryType {
+  _id: string
   _type: 'projectCategory'
-  title: string
   tag: string
 }
 
-export interface ProjectType extends SanityBody {
+export interface ProjectType {
+  _id: string
   _type: 'project'
   title: string
-  image: Image
+  projectImage: string
   linkToBuild: string
   linkToGithub: string
   summary: string
-  tags: projectCategory
-  technologies: (FrontendSkills | backendSkills)[]
+  tags: projectCategory[]
 }
 
-export interface FrontendSkillType extends SanityBody {
+export interface FrontendSkillType {
+  _id: string
   _type: 'frontendSkill'
   title: string
   skillLevel: string
 }
 
-export interface BackendSkillType extends SanityBody {
+export interface BackendSkillType {
+  _id: string
   _type: 'backendSkill'
-  title: string
   skillLevel: string
+  title: string
 }
 
-export interface SocialType extends SanityBody {
+export interface SocialType {
+  _id: string
   _type: 'social'
   title: string
   url: string
