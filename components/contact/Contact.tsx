@@ -66,6 +66,7 @@ const Contact = () => {
                 className="text-xl hover:underline hover:text-titleColorDark"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="Calendly URL for Calls"
               >
                 Schedule a call with me
               </a>
@@ -77,6 +78,7 @@ const Contact = () => {
                 className="text-xl hover:underline hover:text-titleColorDark"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="Email me"
               >
                 {pageInfo.email}
               </a>

@@ -4,7 +4,7 @@ import { UilArrowDown } from '@iconscout/react-unicons'
 const ScrollDown = () => {
   return (
     <div className="ml-28 lg:ml-36 hidden md:block">
-      <a href="#about" className="buttonFlex">
+      <a href="#about" className="buttonFlex" aria-label="ScrollDown Button">
         <svg
           width="32px"
           height="32px"

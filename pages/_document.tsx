@@ -19,10 +19,6 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
           rel="stylesheet"
         />
-        <link
-          href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-          rel="stylesheet"
-        />
         <meta property="og:url" content="https://jaypanchal.me" />
         <meta property="og:title" content="Jay Panchal • Software Developer" />
         <meta property="og:site_name" content="Jay Panchal" />

@@ -26,6 +26,7 @@ const Social = () => {
             delay: 2.25,
           }}
           viewport={{ once: true }}
+          aria-label={`${social.ariaLabel}`}
         >
           {getHomeSocialIcon(social.title)}
         </motion.a>

@@ -54,6 +54,7 @@ const About = () => {
             transition={{ duration: 0.3 }}
             viewport={{ once: true }}
             href={`${pageInfo.resumeURL}?dl=resume.pdf`}
+            aria-label="Download my Resume"
           >
             Downlaod CV
             <svg

@@ -65,4 +65,5 @@ export interface SocialType {
   _type: 'social'
   title: string
   url: string
+  ariaLabel: string
 }

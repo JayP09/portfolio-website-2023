@@ -44,7 +44,11 @@ const Header = () => {
             }}
             viewport={{ once: true }}
           >
-            <a className="text-titleColor font-medium text-xl">
+            <a
+              href="https://jaypanchal.me/"
+              className="text-titleColor font-medium text-xl"
+              aria-label="Jay Panchal Portfolio Website"
+            >
               {'<' + 'Jay' + '/>'}
             </a>
           </motion.div>
@@ -70,6 +74,7 @@ const Header = () => {
                     ? 'navLink text-titleColorDark'
                     : 'navLink'
                 }
+                aria-label="Home Section"
               >
                 <UilEstate className="navIcon" /> Home
               </a>
@@ -92,6 +97,7 @@ const Header = () => {
                     ? 'navLink text-titleColorDark'
                     : 'navLink'
                 }
+                aria-label="About me"
               >
                 <UilUser className="navIcon" /> About
               </a>
@@ -114,6 +120,7 @@ const Header = () => {
                     ? 'navLink text-titleColorDark'
                     : 'navLink'
                 }
+                aria-label="Browser my skills"
               >
                 <UilFile className="navIcon" /> Skills
               </a>
@@ -136,6 +143,7 @@ const Header = () => {
                     ? 'navLink text-titleColorDark'
                     : 'navLink'
                 }
+                aria-label="Browser my work"
               >
                 <UilScenery className="navIcon" /> Portfolio
               </a>
@@ -158,6 +166,7 @@ const Header = () => {
                     ? 'navLink text-titleColorDark'
                     : 'navLink'
                 }
+                aria-label="Contact me"
               >
                 <UilMessage className="navIcon" /> Contact
               </a>

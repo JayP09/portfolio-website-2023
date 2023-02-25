@@ -1,8 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
-import { UilEye } from '@iconscout/react-unicons'
-import { UrlFor } from '@/sanity'
+import { UilLink, UilGithub } from '@iconscout/react-unicons'
 
 const ProjectItems = ({ project }) => {
   return (
@@ -27,26 +26,30 @@ const ProjectItems = ({ project }) => {
           }}
           className="absolute flex justify-center items-center top-0 left-0 bottom-0 right-0 w-full h-full bg-titleColor/70 rounded-lg opacity-0 transition-[all_0.3s_ease] gap-3"
         >
-          <a href={project.linkToBuild} target="_blank" rel="noreferrer">
-            <motion.div
-              whileInView={{ scale: [0, 1] }}
-              whileHover={{ scale: [1, 0.9] }}
-              transition={{ duration: 0.25 }}
-              className="flex justify-center items-center text-titleColor bg-white m-4 rounded-full"
-            >
-              <UilEye className="h-10 w-10" />
-            </motion.div>
-          </a>
-          <a href={project.linkToGithub} target="_blank" rel="noreferrer">
-            <motion.div
-              whileInView={{ scale: [0, 1] }}
-              whileHover={{ scale: [1, 0.9] }}
-              transition={{ duration: 0.25 }}
-              className="flex justify-center items-center text-titleColor bg-white m-4 rounded-lg"
-            >
-              <i className="bx bxl-github text-4xl"></i>
-            </motion.div>
-          </a>
+          <motion.a
+            whileInView={{ scale: [0, 1] }}
+            whileHover={{ scale: [1, 0.9] }}
+            transition={{ duration: 0.25 }}
+            className="flex justify-center items-center text-titleColor w-14 h-14 bg-white p-2 m-4 rounded-full"
+            href={project.linkToBuild}
+            target="_blank"
+            rel="noreferrer"
+            aria-label={`${project.title} Live Demo`}
+          >
+            <UilLink />
+          </motion.a>
+          <motion.a
+            whileInView={{ scale: [0, 1] }}
+            whileHover={{ scale: [1, 0.9] }}
+            transition={{ duration: 0.25 }}
+            href={project.linkToGithub}
+            target="_blank"
+            rel="noreferrer"
+            className="flex justify-center items-center text-titleColor w-14 h-14 bg-white p-2 m-4 rounded-full"
+            aria-label={`${project.title} Github link`}
+          >
+            <UilGithub />
+          </motion.a>
         </motion.div>
       </div>
       <h3 className="text-base text-center font-medium mb-2 lg:mb-3">

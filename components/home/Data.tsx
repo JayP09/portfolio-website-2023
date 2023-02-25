@@ -90,7 +90,7 @@ const Data = () => {
         <span className="mr-2">{text}</span>
         <Cursor cursorColor="#F7AB0A" />
       </p>
-      <a href="#contact" className="button buttonFlex">
+      <a href="#contact" className="button buttonFlex" aria-label="Message Me">
         Say Hello
         <span className="buttonIcon">
           <Image src={SendIcon} alt="Send Icon" />

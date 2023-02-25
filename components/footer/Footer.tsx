@@ -13,17 +13,21 @@ const Footer = () => {
         </h1>
         <ul className="footerList flex justify-center gap-x-6 mb-8">
           <li>
-            <a href="#Home" className="footerLink">
+            <a href="#Home" className="footerLink" aria-label="Home">
               Home
             </a>
           </li>
           <li>
-            <a href="#about" className="footerLink">
+            <a href="#about" className="footerLink" aria-label="About me">
               About
             </a>
           </li>
           <li>
-            <a href="#portfolio" className="footerLink">
+            <a
+              href="#portfolio"
+              className="footerLink"
+              aria-label="Broswer my coding projects"
+            >
               Portfolio
             </a>
           </li>
@@ -36,6 +40,7 @@ const Footer = () => {
               target="_blank"
               rel="noreferrer"
               key={social._id}
+              aria-label={`${social.ariaLabel}`}
             >
               {getFooterSocialIcon(social.title)}
             </a>

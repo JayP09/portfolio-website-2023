@@ -2,16 +2,19 @@ import {
   UilGithubAlt,
   UilTwitterAlt,
   UilLinkedinAlt,
+  UilGithub,
+  UilTwitter,
+  UilLinkedin,
 } from '@iconscout/react-unicons'
 
 export const getFooterSocialIcon = (type: string) => {
   switch (type) {
     case 'github':
-      return <i className="bx bxl-github"></i>
+      return <UilGithub />
     case 'twitter':
-      return <i className="bx bxl-twitter"></i>
+      return <UilTwitter />
     case 'linkedin':
-      return <i className="bx bxl-linkedin-square"></i>
+      return <UilLinkedin />
     default:
       break
   }

@@ -6,7 +6,8 @@ export const fetchSocial = async () => {
     _id,
     _type,
     title,
-    url
+    url,
+    ariaLabel
   }`
   const res = await fetch(`${process.env.NEXT_PUBLIC_API}${query}`)
 

@@ -3,8 +3,12 @@ import { motion } from 'framer-motion'
 import Social from './Social'
 import Data from './Data'
 import ScrollDown from './ScrollDown'
+import Image from 'next/image'
+import { useAppContext } from '@/context/context'
 
 const HeroSection = () => {
+  const { pageInfo } = useAppContext()
+
   return (
     <section
       className="section h-screen md:h-auto max-h-screen flex items-center justify-center"
@@ -27,8 +31,17 @@ const HeroSection = () => {
               delay: 2.25,
             }}
             viewport={{ once: true }}
-            className="profilePic"
-          ></motion.div>
+            className="profilePicContainer"
+          >
+            <Image
+              src={pageInfo.profilePicURL}
+              width={350}
+              height={350}
+              className="profilePic"
+              alt="Jay Panchal - Profile Pic"
+            />
+            <div className="shadow"></div>
+          </motion.div>
           <Data />
         </div>
         <ScrollDown />

@@ -171,7 +171,7 @@
   }
 
   .footerSocialIcon {
-    @apply bg-titleColor text-containerColor text-lg p-2 rounded-full inline-flex justify-center items-center hover:bg-titleColorDark;
+    @apply bg-titleColor text-containerColor text-lg w-14 h-14 rounded-full inline-flex justify-center items-center hover:bg-titleColorDark;
   }
 
   /*=============== LAYOUT ===============*/
@@ -204,10 +204,18 @@
     }
   }
 
+  .profilePicContainer {
+    @apply max-[350px]:w-44 max-[350px]:h-44 w-48 h-48 sm:w-60 sm:h-60 md:w-80 md:h-80 rounded-[60%_40%_30%_70%/60%_30%_70%_40%] order-[initial] justify-self-start md:order-1 md:justify-self-center relative;
+  }
+
   .profilePic {
-    @apply bg-profilepic bg-no-repeat bg-center bg-cover max-[350px]:w-44 max-[350px]:h-44 w-48 h-48 sm:w-60 sm:h-60 md:w-80 md:h-80 rounded-[60%_40%_30%_70%/60%_30%_70%_40%] order-[initial] justify-self-start md:order-1 md:justify-self-center;
+    @apply max-[350px]:w-44 max-[350px]:h-44 w-48 h-48 sm:w-60 sm:h-60 md:w-80 md:h-80 rounded-[60%_40%_30%_70%/60%_30%_70%_40%] -z-10;
     animation: profileAnimate 8s ease-in-out infinite 1s;
-    box-shadow: inset 0 0 0 9px rgb(255 255 255/30%);
+  }
+
+  .shadow {
+    @apply absolute max-[350px]:w-44 max-[350px]:h-44 w-48 h-48 sm:w-60 sm:h-60 md:w-80 md:h-80 rounded-[60%_40%_30%_70%/60%_30%_70%_40%] top-0 bottom-0 right-0 left-0 z-0 border-[9px] border-[rgb(255_255_255/30%)];
+    animation: profileAnimate 8s ease-in-out infinite 1s;
   }
 
   @keyframes profileAnimate {
